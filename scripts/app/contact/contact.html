@@ -1,0 +1,68 @@
+<div id="contactInfoContainer">
+  <div class="xuInfoCard">
+    <div class="xuImg">
+      <img src="images/haiping_xu.jpg">
+    </div>
+    <div class="name">{{contactInfo.director}}</div>
+    <div class="dept">
+      <h4>Department:</h4>
+      <p>{{contactInfo.department}}</p>
+    </div>
+    <div class="univ">
+      <h4>University:</h4>
+      <p>{{contactInfo.location.university}}</p>
+    </div>
+  </div>
+
+  <div id="location">
+    <h2>Location</h2>
+    <div id="locationContentContainer">
+      <div class="locationIcon">
+        <img src="images/location1x.png">
+      </div>
+      <div class="locationContent">{{contactInfo.location.room}},</br>
+        {{contactInfo.location.street}}</br>
+        {{contactInfo.location.university}}
+      </div>
+    </div>
+
+    <div id="PhoneContentContainer">
+      <div class="phoneIcon">
+        <img src="images/phone1x.png">
+      </div>
+      <div class="PhoneContent">
+        <p>{{contactInfo.location.phone}}</p>
+      </div>
+    </div>
+
+    <div id="locationContentContainer">
+      <div class="locationIcon">
+        <img src="images/maps1x.png">
+      </div>
+      <div class="locationContent">
+        <p>Campus Maps:
+          <a ng-repeat="map in contactInfo.campusMaps" href="{{map.href}}" style="text-decoration: none;" target="CSEL">{{map.name}}{{$index < contactInfo.campusMaps.length - 1 ? ',' : ''}} </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="staff">
+    <h2>Administrative Staff</h2>
+    <div id="staffContent">
+      <div ng-repeat="staff in contactInfo.staff">
+        <span class="staffHeading">{{staff.title}}:</span>
+        <ng-bind-html ng-bind-html="staff.name"></ng-bind-html>
+        <span ng-if="staff.email">
+          </br>(Email: <a href="mailto:{{staff.email}}">{{staff.email}}</a>)
+        </span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="mapContainer">
+  <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2982.1500359096144!2d-71.0088885845394!3d41.630888279242555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4fccc302a1087%3A0x5e8e87862dc75cf3!2sUniversity+of+Massachusetts+Dartmouth!5e0!3m2!1sen!2sus!4v1447375482355"
+    width="100%" height="1000" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>

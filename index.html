@@ -1,0 +1,149 @@
+<!doctype html>
+<html ng-app="csel" lang="en" ng-strict-di>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>CSEL</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="scripts/lib/angular-material/angular-material.min.css">
+  <!-- TinyMCE styles -->
+  <!-- <link rel="stylesheet" href="scripts/lib/tinymce/skins/lightgray/content.min.css">
+  <link rel="stylesheet" href="scripts/lib/tinymce/skins/lightgray/skin.min.css"> -->
+  <!-- jQuery UI styles -->
+  <!-- <link rel="stylesheet" href="scripts/lib/jquery-ui-bundle/jquery-ui.min.css">
+  <link rel="stylesheet" href="scripts/lib/jquery-ui-bundle/jquery-ui.theme.min.css"> -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <link rel="shortcut icon" href="images/csel.ico" type="image/x-icon">
+  <link rel="icon" href="images/csel.ico" type="image/x-icon">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <base href="/~dluong1/csel/" />
+  <!-- <base href="/" /> -->
+
+</head>
+
+<body ng-app="csel">
+  <!--[if lte IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <header>
+    <div id="headerRow1">
+      <div class="container">
+        <div class="info">
+          Computer & Information Sciences, UMass Dartmouth
+        </div>
+        <div ng-cloak class="info login-header" ng-if="!$root.loggedIn">
+          <a href="profile">Login</a>
+        </div>
+        <div ng-cloak class="info login-header" ng-if="$root.loggedIn">
+          <a ng-click="logout()" href="#">Logout</a>
+        </div>
+      </div>
+    </div>
+    <div id="headerRow2">
+      <div id="title">
+        Concurrent Software Engineering Laboratory
+      </div>
+      <div id="directorInfo">
+        <a href="http://www.cis.umassd.edu/~hxu/" target="_blank" style="color:#C5CAE9;text-decoration:none;">Director : Dr. Haiping Xu</a>
+      </div>
+    </div>
+
+    <div ng-controller="AppCtrl">
+      <div id="mobileMenuContainer">
+        <md-button class="md-icon-button" ng-click="mobileMenu()" style="width:36px;margin:0 auto;">
+          <i class="material-icons">menu</i>
+        </md-button>
+      </div>
+      <ul id="navTabs">
+        <li class="inline-list home">
+          <a href="home">Home</a>
+        </li>
+        <li class="inline-list people">
+          <a href="people">People</a>
+        </li>
+        <li class="inline-list research">
+          <a href="research">Research</a>
+        </li>
+        <li class="inline-list publications">
+          <a href="publications">Publications</a>
+        </li>
+        <li class="inline-list grantActivities">
+          <a href="grantActivities">Grant Activities</a>
+        </li>
+        <li class="inline-list contactInfo">
+          <a href="contactInfo">Contact Info</a>
+        </li>
+        <li class="inline-list profile" ng-show="$root.loggedIn">
+          <a href="profile">{{$root.isAdmin ? 'Management' : 'Profile'}}</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div id="viewMainContainer">
+    <div id="viewContainer">
+      <div ng-view=""></div>
+    </div>
+  </div>
+
+</body>
+
+<footer id="footer">
+  © 2015 Concurrent Software Engineering Laboratory. All Rights Reserved.
+  <br> Developed by Surya K. Juthuka, continued by Duc Tu Luong.
+  <br> University of Massachusetts Dartmouth • 285 Old Westport Road • Dartmouth, MA 02747-2300
+
+  <!-- jQuery -->
+  <script src="scripts/lib/jquery/dist/jquery.js"></script>
+  <script src="scripts/lib/jquery-ui-bundle/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+
+  <!-- Start Libraries -->
+  <script src="scripts/lib/vendor.js"></script>
+  <!-- TinyMCE core -->
+  <!-- <script src="scripts/lib/tinymce/tinymce.min.js"></script>
+  <script src="scripts/lib/tinymce/themes/modern/theme.min.js"></script> -->
+  <!-- TinyMCE plugins -->
+  <!-- <script src="scripts/lib/tinymce/plugins/textcolor/plugin.min.js"></script>
+  <script src="scripts/lib/tinymce/plugins/colorpicker/plugin.min.js"></script>
+  <script src="scripts/lib/tinymce/plugins/image/plugin.min.js"></script>
+  <script src="scripts/lib/tinymce/plugins/link/plugin.min.js"></script>
+  <script src="scripts/lib/tinymce/plugins/preview/plugin.min.js"></script>
+  <script src="scripts/lib/tinymce/plugins/insertdatetime/plugin.min.js"></script> -->
+  <!-- Libraries -->
+  <!-- <script src="scripts/lib/angular/angular.js"></script>
+  <script src="scripts/lib/angular-animate/angular-animate.js"></script>
+  <script src="scripts/lib/angular-messages/angular-messages.min.js"></script>
+  <script src="scripts/lib/angular-sanitize/angular-sanitize.js"></script>
+  <script src="scripts/lib/angular-aria/angular-aria.js"></script>
+  <script src="scripts/lib/angular-route/angular-route.js"></script>
+  <script src="scripts/lib/angular-resource/angular-resource.min.js"></script>
+  <script src="scripts/lib/ng-file-upload/dist/ng-file-upload.min.js"></script>
+  <script src="scripts/lib/ng-file-upload/dist/ng-file-upload-all.min.js"></script>
+  <script src="scripts/lib/angular-material/angular-material.min.js"></script>
+  <script src="scripts/lib/angular-filter/dist/angular-filter.min.js"></script>
+  <script src="scripts/lib/angular-ui-sortable/dist/sortable.min.js"></script>
+  <script src="scripts/lib/angular-ui-tinymce/dist/tinymce.min.js"></script> -->
+  <!-- End Libraries -->
+
+  <!-- App main -->
+  <script src="scripts/app/app.js"></script>
+  <script src="scripts/app/app.services.js"></script>
+  <!-- App components -->
+  <script src="scripts/app/home/home.component.js"></script>
+  <script src="scripts/app/publications/pub.component.js"></script>
+  <script src="scripts/app/research/research.component.js"></script>
+  <script src="scripts/app/activities/act.component.js"></script>
+  <script src="scripts/app/contact/contact.component.js"></script>
+  <script src="scripts/app/people/people.component.js"></script>
+  <script src="scripts/app/profile/profile.component.js"></script>
+
+</footer>
+
+</html>

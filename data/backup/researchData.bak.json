@@ -1,0 +1,342 @@
+{
+    "research": {
+        "gradStudents": {
+            "mastersThesis": [
+                {
+                    "edit": false,
+                    "point": "Vipanch Erram, \"Automated Product Feature Extraction Using Recurrent Neural Networks,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth."
+                }
+            ],
+            "mastersProject": [
+                {
+                    "edit": false,
+                    "point": "Hardik Sankhla, \"Visualization and Prediction of Enengy Usage for Smart Cities,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth."
+                },
+                {
+                    "edit": false,
+                    "point": "Nilay Subhashchandra Upadhyay, \"Mobile Cloud Computing for On-Demand Transport Services,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth."
+                },
+                {
+                    "edit": false,
+                    "point": "Dhruvil N. Patel, \"Implementation of Auction-Based On-Demand Transport Application Using iOS Programming,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth."
+                },
+                {
+                    "edit": false,
+                    "point": "Jiahuan Li, \"Deep Learning for Image Recognition Using Boltzmann Machines,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth."
+                },
+                {
+                    "edit": false,
+                    "point": "Yucong Cao, \"Secure and Space-Efficient Big Data Storage in Clouds,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth."
+                },
+                {
+                    "edit": false,
+                    "point": "Kuan-Lun Chen, \"Applying Deep Learning Based Predictive Analytics in Housing Market,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth."
+                }
+            ],
+            "phdDissertation": [
+                {
+                    "edit": false,
+                    "point": "Richard de Groof, \"Analysis of Online Product Reviews Using Text Mining,\" <i>Ph.D. Dissertation<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Papers\/UMD\/2009\/CP\/IEEE-BigData-2017-XU.pdf' target='CSEL'>Paper-1<\/a> Paper-2"
+                },
+                {
+                    "edit": false,
+                    "point": "Jean F. Rahme, \"Software Reliability Models for Cloud-Based Software Rejuvenation Using Dynamic Fault Trees,\" <i><a href='..\/Papers\/UMD\/2009\/BK\/Jean_Rahme_Thesis.pdf' target='CSEL'>Ph.D. Dissertation<\/a><\/i>, CIS Department, UMass Dartmouth, Ph.D. Thesis Proposal Defense (<a href='..\/Projects\/UMD\/Abstract\/ProposalAbstract-JeanRahme.pdf' target='CSEL'>Abstract<\/a>), Friday, February 24, 2017; Ph.D. Thesis Defense (<a href='..\/Projects\/UMD\/Abstract\/PhDThesisAbstract-John.pdf' target='CSEL'>Abstarct<\/a>), Friday, November 3, 2017. <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2015-XU-2.pdf' target='CSEL'>Paper-1<\/a> <a href='..\/Papers\/UMD\/2009\/JP\/IJSEKE-2015-XU-2.pdf' target='CSEL'>Paper-2<\/a> <a href='..\/Papers\/UMD\/2009\/CP\/IEEE-ATC-2017-XU.pdf' target='CSEL'>Paper-3<\/a> <a href='..\/Papers\/UMD\/2009\/CP\/IEEE-ATC-2017-XU-2.pdf' target='CSEL'>Paper-4<\/a> <a href='..\/Papers\/UMD\/2009\/CP\/ResearchPoster-2017-Jean.pdf' target='CSEL'>Poster<\/a>"
+                }
+            ]
+        },
+        "visitingScholar": [
+            {
+                "edit": false,
+                "point": "Dr. Lexin Zhou, \"Knowledge-Based Online Auctions, Logistics and Supply Chain Trading, Design of Area Logistics Trading Centers Using Online Auction Theories and the Latest Computer Technologies,\" <i>Visiting Scholar<\/i>, <a href='http:\/\/www.gzu.edu.cn\/en\/' target='CSEL'>Guizhou University<\/a>, China, November 2015 - November 2016. <a href='..\/Papers\/UMD\/2009\/CP\/MobileCloud-2017-XU.pdf' target='CSEL'>Paper-1<\/a> Paper-2"
+            },
+            {
+                "edit": false,
+                "point": "Dr. Tianguo Jin, \"Virtual Test of Composite Components Using Agent and Ontology-Based Techniques,\" <i>Visiting Scholar<\/i>, <a href='http:\/\/en.hit.edu.cn\/' target='CSEL'>Harbin Institute of Technology<\/a>, China, September 2014 - September 2015."
+            }
+        ],
+        "alumni": {
+            "mastersThesis": [
+                {
+                    "edit": false,
+                    "point": "Amol S. Gade (2016), \"Towards Structured Deep Neural Network for Predictive Analytics,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ThesisAbstract-Amol.pdf' target='CSEL'>Abstract<\/a> <a href='..\/Papers\/UMD\/2009\/CP\/IEEE-SCI-2017-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Yuhan Zhang (2015), \"SLTM: A Sentence Level Topic Model for Analysis of Online Product Reviews,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ThesisAbstract-Yuhan.pdf' target='CSEL'>Abstract<\/a> <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2016-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Chang Wei (Morris) Huang (2014), \"Embedding Digital Signatures as Invisible Watermarks in Cloud-Based Critical Data,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ThesisAbstract-Morris.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Deepti S. Bhalerao (2014), \"A Secure and Fault-Tolerant Data Storage Schema Using Multiple Cloud-Based Service Providers,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ThesisAbstract-Deepti.pdf' target='CSEL'>Abstract<\/a> <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2015-XU-1.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Ran Wei (2013), \"A Formal Cost-Effectiveness Analysis Model for Product Evaluation Using Classified Online Product Reviews,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ThesisAbstract-Ran.pdf' target='CSEL'>Abstract<\/a> <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2013-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Ameya M. Lad (2013), \"Optimal Configuration for Ontology-Based Dynamic Composite Web Services,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ThesisAbstract-Ameya.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Arturo W. Li (2013), \"Ontology-Supported Smart Search Engine for Concept-Based Query,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ThesisAbstract-Arturo.pdf' target='CSEL'>Abstract<\/a> <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2014-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Jean F. Rahme (2012), \"Optimal Rejuvenation Scheduling for Cloud-Based Systems Using Extended Dynamic Fault Trees,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ThesisAbstract-Jean.pdf' target='CSEL'>Abstract<\/a> <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2015-XU-2.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Daniel F. Fitch (2011), \"A Petri Net Model for Secure and Fault Tolerant Cloud Based Information Storage,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ThesisAbstract-Daniel.pdf' target='CSEL'>Abstract<\/a> <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2012-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Harmeet K. Chawla (2011), \"A Real-Time Reliability Model for Ontology-Based Dynamic Web Service Composition,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ThesisAbstract-Harmeet.pdf' target='CSEL'>Abstract<\/a> <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2011-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Benjamin J. Ford (2010), \"Data Mining Approaches for Detection of Suspicious Bidders in Online Auctions,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ThesisAbstract-Ben.pdf' target='CSEL'>Abstract<\/a> <a href='..\/Papers\/UMD\/2009\/CP\/ICAI-2010-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Ankit Goel (2010), \"A Multi-State Bayesian Network for Shill Verification in Online Auctions,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ThesisAbstract-Ankit.pdf' target='CSEL'>Abstract<\/a> <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2010-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Christopher K. Bates (2009), \"Agent-Based Shill Detection in Live Online Auctions Using Real-Time Model Checking,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Papers\/UMD\/2009\/CP\/SERP-2009-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Abhinay K. Reddyreddy (2008), \"Development of State-Based XML Firewall for Service-Oriented Systems,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Papers\/UMD\/2003\/CP\/SEKE-2008-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Ryan M. Robidoux (2007), \"Automated Verification of a Computer System Reliability Model,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Papers\/UMD\/2009\/JP\/IEEE-TSMCA-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Rinkesh J. Patel (2007), \"Real-Time Trust Management in Agent-Based Online Auction Systems,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Papers\/UMD\/2003\/CP\/SEKE-2007-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Mihir M. Ayachit (2006), \"A Petri Net Based XML Firewall Security Model for Web Services Invocation,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Papers\/UMD\/2003\/CP\/CNIS-2006.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Yi-Tsung Cheng (2005), \"A Formal Approach to Detecting Shilling Behaviors in Concurrent Online Auctions,\" <i>Master's Thesis<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Papers\/UMD\/2003\/CP\/ICEIS-2006-XU.pdf' target='CSEL'>Paper<\/a>"
+                }
+            ],
+            "mastersProject": [
+                {
+                    "edit": false,
+                    "point": "Vishnu Vardhan Kumar Pallati (2016), \"Bringing a Rich User Experience for Online Shopping Using Virtual Reality,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Vishu.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Vipanch Erram (2016), \"A Deep Learning Approach to Recognizing Human Activities Using Convolutional Neural Networks,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Vipanch.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Vishal Sarode (2016), \"Protecting Data Security and Confidentiality Using Nonlinear Distribution of Cloud Data at Multiple Clouds,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Vishal.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Joshua Killion (2016), \"A Double Auction Based Online Cab Booking System Using McAfee\u2019s Mechanism,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Josh.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Chien Sien Low (2016), \"LRS: A Leaf Recognition System Using Image Processing,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-ChienSien.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Harini Pughazhendi (2016), \"Simulation of Reliable Cloud Services Using Amazon Web Services,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Harini.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Yashwanth Nandanam (2016), \"Defending Against Denial-of-Service Attacks in Software Defined Networks,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Yashwanth.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Surya K. Juthuka (2015), \"Development of Advanced Web Applications with Modern Technologies and Workflows,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Surya.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Amol S. Gade (2015), \"Predicting Local House Prices Using an Incremental-Learning Neural Network,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Amol.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Kirti N. Dighe (2015), \"VCSS: A Virtual Cloud Storage Service for Multiple Cloud Service Providers,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Kirti.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Laxman K. Pothamshetti (2015), \"Enhance Secure Login to a Windows System Using Facial Recognition,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Laxman.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Roni Hyam (2015), \"Implementation of a Semantic Search Engine Using Graph Database,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Roni.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Yuhan Zhang (2014), \"Rule-Based Reasoning for Price Change Prediction of Online Products in E-Commerce,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Yuhan.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Safia A. Habib (2014), \"Big Data Analysis of Airline Data for Flight Delay Statistics,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Safia.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Sai Krishna Yellanki (2014), \"Estimation of Topic Coverage For Computer Science Courses Using Ontology Mapping,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-SaiKrishna.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Rahul R. Kulkarni (2014), \"Feature-Based Analysis of Product Reviews for Online Products Using Text Mining,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Rahul.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Anoop Veerepalli (2014), \"Automatic Object Identification for Cloud-Based Real-Time Map Services Used by Android Devices,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Anoop.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Deepti S. Bhalerao (2013), \"A Secure and Efficient Cloud-Based Storage System for Large Files,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Deepti.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Alok Gadgil (2013), \"A Cloud-Based Secure Multimedia Information Storage and Retrieval System Using Windows Azure Platform,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Alok.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Gregg J. Bailey (2013), \"Prototyping an iOS-based E-Learning Application Using Mobile Cloud Computing,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Gregg.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Mayur M. Chougule (2013), \"Real-Time Map Services for Android Devices Using Mobile Cloud Computing,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Mayur.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Chang Wei Huang (2013), \"Securing Critical Data in Clouds Using Multiple Digital Signatures,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Morris.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Ran Wei (2012), \"A Dempster-Shafer Theory Based Cost-Effectiveness Analysis Model for E-Commerce,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Ran.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Karthik Prasad (2012), \"A Model Checking Approach to Detecting Abnormal User Behaviors in Cloud-Based Transactions,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Karthik.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Ameya M. Lad (2012), \"Multi-Attribute Based Optimal Configuration for Composite Web Services Using Linear Programming,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Ameya.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Arturo W. Li (2012), \"Prototyping an Ontology-Based Semantic UDDI for Cloud Services,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-ArturoLi.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Jean F. Rahme (2011), \"Modeling and Evaluating the Reliability of Web Service Applications in Cloud Computing Using Dynamic Fault Trees,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Jean.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Ashok Peeta (2013), \"Prototyping a Reliable Cloud-Based Storage System Using Amazon Web Services,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Ashok.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Daniel F. Fitch (2010), \"Simulations of Multi-Phased XML-Based Attacks and Their Defending Strategies,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/2009\/JP\/JCP-XU-2011.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Jerry Kuzhuppallil (2010), \"Simulating a Variation of the XML-Based Mitnick Attack,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Jerry.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Benjamin J. Ford (2009), \"Graphical User Interface for Specifying Layered Bidding Strategies in Agent-Based Online Auctions,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Papers\/UMD\/2003\/CP\/ITNG-2009-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Harmeet K. Chawla (2009), \"Ontology-Based Remote Service Registration and Discovery Using JAX-WS,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Harmeet.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Amit R. Ahirrao (2009), \"Dynamic Web Service Composition Using Semantic Web,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/Abstract-Amit.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Ankit Goel (2008), \"Evaluation of a Bayesian Network with Multi-State Nodes for Shill Verification in Online Auctions,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Ankit.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Christopher K. Bates (2008), \"Rule-Based Specification of Flexible Bidding Strategies in Agent-Based Online Auctions,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/ProjectAbstract-Chris.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Sravan K. Patti (2007), \"Implementing Ontology-Based Dynamic Service Discovery in JavaSpaces,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/Abstract-Sravan.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Brinda V. Kommireddi (2007), \"Developing a Dynamic Virtual Restaurant Using RMI,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/PorjectAbstract-Brinda.pdf' target='CSEL'>Abstract<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Abhinay K. Reddyreddy (2007), \"Simulation of XML-Based Attacks for Testing the Effectiveness of XML Firewall,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Papers\/UMD\/2003\/CP\/SEKE-2008-XU.pdf' target='CSEL'>Paper<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Rinkeshkumar J. Patel (2006), \"A Trustworthy Agent Based Online Auction System,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/Trustworthy-Auction-System.ppt' target='CSEL'>Slides<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Pratik K. Kadakia (2006), \"Building a Travel Reservation System Using Web Services Composition Language,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/TravelReserv.pdf' target='CSEL'>Proposal<\/a> <a href='..\/Projects\/UMD\/BPEL4WS\/WSComposition.ppt' target='CSEL'>Slides<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Chandana Kancherla (2005), \"A Service-Oriented Peer-to-Peer System for Resource Sharing,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/P2P\/P2P-Chandana.ppt' target='CSEL'>Slides<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Mihir M. Ayachit (2005), \"BOS: Book Ordering Section for University Faculty,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth."
+                },
+                {
+                    "edit": false,
+                    "point": "Tsung-Ta Tu (2004), \"Online Trading and Data Mining-Based Marketing of IT Books,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Abstract\/TTT-Trading.ppt' target='CSEL'>Slides<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Minal G Pimparkar (2004), \"OSPS: An Office Supplies Purchasing System Using Web Services,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth."
+                },
+                {
+                    "edit": false,
+                    "point": "Yi-Tsung Cheng (2004), \"Information Exchange in a Multi-Agent System for Troubleshooting,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth."
+                },
+                {
+                    "edit": false,
+                    "point": "Jose Manuel Valladares Pernas (2004), \"A Multi-Agent System for Electronic Auctions,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth. <a href='..\/Projects\/UMD\/Auctions\/Manuel-MAS.ppt' target='CSEL'>Slides<\/a>"
+                },
+                {
+                    "edit": false,
+                    "point": "Ying-Chang Tseng (2003), \"Web Based Application: Online Used Bookstore - Model Design and Implementation,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth."
+                },
+                {
+                    "edit": false,
+                    "point": "Kuei Chih Hsu (2003), \"Web Based Application: Online Used Bookstore - View and Controller Design and Implementation,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth."
+                },
+                {
+                    "edit": false,
+                    "point": "Ming-Shan Hsu (2003), \"Performance Comparison of Routing Protocols in Wired and Wireless Networks,\" <i>Master's Project<\/i>, CIS Department, UMass Dartmouth."
+                }
+            ],
+            "phdDissertation": [
+                {
+                    "edit": false,
+                    "point": "Fei Dong (2012), \"Automated Inference of Shilling Behavior in Online Auction Systems,\" <i>Ph.D. Dissertation<\/i>, Department of Computer Science, University of Illinois at Chicago, Co-advised with Dr. Sol M. Shatz."
+                },
+                {
+                    "edit": false,
+                    "point": "Zhenhua Yu (2007), \"A Novel \u03c0-Net Based Architecture Description Language for Multi-Agent Systems,\" <i>Ph.D. Dissertation<\/i>, School of Electronics and Information Engineering, Xi'an Jiaotong University, Co-advised with Dr. Yuanli Cai."
+                }
+            ]
+        }
+    }
+}

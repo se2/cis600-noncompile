@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+    # Prevent directory listing
+    Options All -Indexes
+    # Allow json files accessible (required for client-side code)
+    IndexIgnore *.json
+    RewriteEngine On
+
+    # Don't rewrite files or directories
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+    # Re-direct not-found urls to homepage
+    RewriteRule (.*) /~dluong1/csel/index.html [L]
+</IfModule>
+
+# Prevent JSON accessible from public
+# <FilesMatch "(\.(json)|~)$">
+#     ## Apache 2.2
+#     Order allow,deny
+#     Deny from all
+#     Satisfy All
+
+#     ## Apache 2.4
+#     # Require all denied
+# </FilesMatch>

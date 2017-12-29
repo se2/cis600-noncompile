@@ -1,0 +1,66 @@
+{
+    "home": {
+        "mainPara": "The Concurrent Software Engineering Laboratory (CSEL) performs research activities in modeling, design, development, and analysis of concurrent software systems, including parallel and distributed computing systems. This includes research in distributed software engineering, formal methods, flexible manufacturing systems, workflow management systems, web services, and multi-agent systems.",
+        "subParas": [
+            {
+                "point": "The research work in distributed software engineering covers many topics related to requirements specification and analysis, architecture design, verification and validation. Areas of focus include design and analysis methods for distributed object systems, parallel algorithms, multi-agent software, performance metrics for concurrency models, and techniques and tools for testing of concurrent software systems."
+            },
+            {
+                "point": "One area of emphasis is the theory and applications of <a href='http://www.informatik.uni-hamburg.de/TGI/PetriNets/' target='CSEL'>Petri Nets</a>, a formal graph model for concurrency and coordination by using various forms of Petri nets and automata, including systems that require annotations of time, costs, and resource allocation."
+            },
+            {
+                "point": "Study of structural and behavioral properties of Petri net morphisms and their applications in analysis, decomposition, and synthesis of concurrent systems is part of a broader interest in formal conceptual modeling of parallel and distributed systems. Another interest is in efficient parallelization of sequential algorithms or programs."
+            },
+            {
+                "point": "Part of the research in verification seeks new approaches to improve the effectiveness of automated system verification using temporal logic and model checking algorithms."
+            },
+            {
+                "point": "Research in service-oriented computing includes model-based service composition, mobile cloud computing, agent-based web services, and web services security."
+            },
+            {
+                "point": "Research related to multi-agent systems focuses on model-based agent development and agent-oriented software engineering. Some specific research issues in this area include formal specification and prototyping of multi-agent systems; model-based development of agent-oriented software, including design and implementation of software agents; and real-world applications of agent technology."
+            }
+        ]
+    },
+    "contactInfo": {
+        "director": "Dr. Haiping Xu",
+        "department": "Computer & Information Sciences",
+        "staff": [
+            {
+                "title": "Lab Manager",
+                "name": "Richard de Groof",
+                "email": "rdegroof@umassd.edu"
+            },
+            {
+                "title": "Technician",
+                "name": "Paul Naylor",
+                "email": "pnaylor@umassd.edu"
+            },
+            {
+                "title": "Former Lab Managers",
+                "name": "<br/>Jean F. Rahme (2013 ~ 2017)<br/>Arturo Li (2011 ~ 2013)",
+                "email": ""
+            }
+        ],
+        "campusMaps": [
+            {
+                "href": "images/campusmap.jpg",
+                "name": "1"
+            },
+            {
+                "href": "images/campusmap.pdf",
+                "name": "2"
+            },
+            {
+                "href": "images/campusmap-1.pdf",
+                "name": "3"
+            }
+        ],
+        "location": {
+            "room": "101C Textile Building",
+            "street": "285 Old Westport Rd.",
+            "university": "University of Massachusetts Dartmouth",
+            "phone": "(508) 910-6285"
+        }
+    }
+}

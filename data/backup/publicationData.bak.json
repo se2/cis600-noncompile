@@ -1,0 +1,410 @@
+{
+    "publications": {
+        "umd09JP": [
+            {
+                "point": "<u>Haiping Xu<\/u>, Yuhan Zhang, and Richard de Groof, \"FSM: A Feature-Based Sentence Model for Evaluation and Comparison of Similar Online Products,\" <i>To be submitted to journal, June 2017.",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and Deepti Bhalerao, \"Reliable and Secure Distributed Cloud Data Storage Using Reed-Solomon Codes,\" <i>International Journal of Software Engineering and Knowledge Engineering (<a href='http:\/\/www.worldscientific.com\/worldscinet\/ijseke' target='CSEL'>IJSEKE<\/a>)<\/i>, Vol. 25, Nos. 9 & 10, 2015, pp. 1611-1632. <a href='..\/Papers\/UMD\/2009\/JP\/IJSEKE-2015-XU-1.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Jean Rahme and <u>Haiping Xu<\/u>, \"A Software Reliability Model for Cloud-Based Software Rejuvenation Using Dynamic Fault Trees,\" <i>International Journal of Software Engineering and Knowledge Engineering (<a href='http:\/\/www.worldscientific.com\/worldscinet\/ijseke' target='CSEL'>IJSEKE<\/a>)<\/i>, Vol. 25, Nos. 9 & 10, 2015, pp. 1491-1513. <a href='..\/Papers\/UMD\/2009\/JP\/IJSEKE-2015-XU-2.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, \"Future Research Directions of Software Engineering and Knowledge Engineering,\" <i>International Journal of Software Engineering and Knowledge Engineering (<a href='http:\/\/www.worldscientific.com\/worldscinet\/ijseke' target='CSEL'>IJSEKE<\/a>)<\/i>, Vol. 25, No. 2, 2015, pp. 415-421. <a href='..\/Papers\/UMD\/2009\/JP\/IJSEKE-XU-2014.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Benjamin J. Ford, <u>Haiping Xu<\/u>, and Iren Valova, \"A Real-Time Self-Adaptive Classifier for Identifying Suspicious Bidders in Online Auctions,\" <i>The Computer Journal (<a href='http:\/\/comjnl.oxfordjournals.org\/content\/56\/5\/646.abstract' target='CSEL'>COMPJ<\/a>)<\/i>, Vol. 56, No. 5, 2013, pp. 646-663. <a href='..\/Papers\/UMD\/2009\/JP\/CJ-XU-2013.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Daniel F. Fitch and <u>Haiping Xu<\/u>, \"A RAID-Based Secure and Fault-Tolerant Model for Cloud Information Storage,\" <i>International Journal of Software Engineering and Knowledge Engineering (<a href='http:\/\/www.worldscientific.com\/worldscinet\/ijseke' target='CSEL'>IJSEKE<\/a>)<\/i>, Vol. 23, No. 5, 2013, pp. 627-654. <a href='..\/Papers\/UMD\/2009\/JP\/IJSEKE-XU-2013.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, Abhinay Reddyreddy, and Daniel F. Fitch, \"Defending Against XML-Based Attacks Using State-Based XML Firewall,\" <i>Journal of Computers (<a href='http:\/\/ojs.academypublisher.com\/index.php\/jcp\/issue\/archive' target='CSEL'>JCP<\/a>)<\/i>, Vol. 6, No. 11, November 2011, pp. 2395-2407. <a href='..\/Papers\/UMD\/2009\/JP\/JCP-XU-2011.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Fei Dong, Sol M. Shatz, <u>Haiping Xu<\/u>, and Dibyen Majumdar, \"Price Comparison: A Reliable Approach to Identifying Shill Bidding in Online Auctions?\" <i>Electronic Commerce Research and Applications (<a href='http:\/\/www.journals.elsevier.com\/electronic-commerce-research-and-applications\/' target='CSEL'>ECRA<\/a>)<\/i>, Vol. 11, No. 2, March-April 2012, pp. 171-179. <a href='..\/Papers\/UMD\/2009\/JP\/ECRA-2011.pdf' target='CSEL'>PDF File<\/a> (download from <a href='http:\/\/www.sciencedirect.com\/science\/article\/pii\/S1567422311001037'  target='CSEL'>ScienceDirect<\/a>)",
+                "edit": false
+            },
+            {
+                "point": "Ryan Robidoux, <u>Haiping Xu<\/u>, Liudong Xing, and MengChu Zhou, \"Automated Modeling of Dynamic Reliability Block Diagrams Using Colored Petri Nets,\" <i>IEEE Transactions on Systems, Man, and Cybernetics, Part A: Systems and Humans (<a href='http:\/\/www.ieeesmc.org\/publications\/' target='CSEL'>SMC-A<\/a>)<\/i>, Vol. 40, No. 2, March 2010, pp. 337-351. <a href='..\/Papers\/UMD\/2009\/JP\/IEEE-TSMCA-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Fei Dong, Sol M. Shatz, and <u>Haiping Xu<\/u>, \"Reasoning Under Uncertainty for Shill Detection in Online Auctions Using Dempster-Shafer Theory,\" <i>International Journal of Software Engineering and Knowledge Engineering (<a href='http:\/\/www.worldscientific.com\/worldscinet\/ijseke' target='CSEL'>IJSEKE<\/a>)<i>, Vol. 20, No. 7, November 2010, pp. 943-973. <a href='..\/Papers\/UMD\/2009\/JP\/IJSEKE-2009.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Benjamin J. Ford, <u>Haiping Xu<\/u>, Christopher K. Bates, and Sol M. Shatz, \"Visual Specification of Layered Bidding Strategies for Autonomous Bidding Agents,\" <i>Journal of Computers (<a href='http:\/\/ojs.academypublisher.com\/index.php\/jcp\/issue\/archive' target='CSEL'>JCP<\/a>)<\/i>, Vol. 5, No. 6, June 2010, pp. 940-950. <a href='..\/Papers\/UMD\/2009\/JP\/JCP-XU-2010.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Fei Dong, Sol M. Shatz, and <u>Haiping Xu<\/u>, \"Combating Online In-Auction Fraud: Clues, Techniques and Challenges,\" <i>Computer Science Review (<a href='http:\/\/www.journals.elsevier.com\/computer-science-review\/' target='CSEL'>CSR<\/a>)<\/i>, Vol. 3, No. 4, November 2009, pp. 245-258. <a href='..\/Papers\/UMD\/2009\/JP\/CSR-2009.pdf' target='CSEL'>PDF File<\/a> (download from <a href='http:\/\/www.sciencedirect.com\/science\/journal\/15740137' target='CSEL'>ScienceDirect<\/a>)",
+                "edit": false
+            }
+        ],
+        "umd03JP": [
+            {
+                "point": "<u>Haiping Xu<\/u>, Liudong Xing, and Ryan Robidoux, \"DRBD: Dynamic Reliability Block Diagrams for System Reliability Modeling,\" <i>International Journal of Computers and Applications (<a href='http:\/\/www.actapress.com\/Content_of_Journal.aspx?JournalID=111#pages' target='CSEL'>IJCA<\/a>)<\/i>, Vol. 31, No. 2, 2009, pp. 132-141. <a href='..\/Papers\/UMD\/2003\/JP\/DRBD-August-2007.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, Mihir Ayachit, and Abhinay Reddyreddy, \"Formal Modeling and Analysis of XML Firewall for Service-Oriented Systems,\" <i>International Journal of Security and Networks (<a href='http:\/\/www.inderscience.com\/jhome.php?jcode=ijsn' target='CSEL'>IJSN<\/a>)<\/i>, Vol. 3, No. 3, 2008, pp. 147-160. <a href='..\/Papers\/UMD\/2003\/JP\/IJSN-2008-3-3-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Zhenhua Yu,Yuanli Cai, and <u>Haiping Xu<\/u>, \"Petri Nets Semantics of \u03c0-calculus,\" <i>Frontiers of Electrical and Electronic Engineering in China (<a href='http:\/\/link.springer.com\/journal\/11460' target='CSEL'>FEEEC<\/a>)<\/i>, September 2008, Vol. 3, No. 3, pp. 290-294. <a href='http:\/\/www.springerlink.com\/content\/e7r1x24427503470\/'  target='CSEL'>SpringerLink<\/a> <a href='..\/Papers\/UMD\/2003\/JP\/FEEEC-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and Yi-Tsung Cheng, \"Model Checking Bidding Behaviors in Internet Concurrent Auctions,\" <i>International Journal of Computer Systems Science & Engineering (<a href='http:\/\/www.crlpublishing.co.uk\/journal.asp?j=csse&s=Aims%20and%20Scope' target='CSEL'>IJCSSE<\/a>)<\/i>, July 2007, Vol. 22, No. 4, pp. 179-191. <a href='..\/Papers\/UMD\/2003\/JP\/IJCSSE-XU-2007.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Zhenhua Yu,Yuanli Cai, and <u>Haiping Xu<\/u>, \"Modeling and Analyzing Multi-Agent Systems Based on \u03c0-net,\" <i>Systems Engineering - Theory & Practice (<a href='http:\/\/www.sysengi.com\/' target='CSEL'>SETP<\/a>)<\/i>, July 2007, Vol. 27, No. 7, pp. 77-84 (in Chinese). <a href='..\/Papers\/UMD\/2003\/JP\/SETP-2007.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Zhenhua Yu,Yuanli Cai, and <u>Haiping Xu<\/u>, \"On Petri Nets Semantics for \u03c0-calculus,\" <i>Journal of Control and Decision (<a href='http:\/\/www.kzyjc.net:8080\/CN\/volumn\/current.shtml' target='CSEL'>JCD<\/a>)<\/i>, August 2007, Vol. 22, No. 8, pp. 864-868 (in Chinese). <a href='..\/Papers\/UMD\/2003\/JP\/JCD-2007.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, Xiaoqin Zhang, and Rinkesh J. Patel, \"Developing Role-Based Open Multi-Agent Software Systems,\" <i>International Journal of Computational Intelligence Theory and Practice (<a href='http:\/\/www.serialsjournals.com\/journal-detail.php?journals_id=62' target='CSEL'>IJCITP<\/a>)<\/i>, June 2007, Vol. 2, No. 1, pp. 39-56. <a href='..\/Papers\/UMD\/2003\/JP\/IJCITP-XU-2007.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Xiaoqin Zhang, <u>Haiping Xu<\/u>, and Bhavesh Shrestha, \"An Integrated Role-Based Approach for Modeling, Designing and Implementing Multi-Agent Systems,\" <i>Journal of the Brazilian Computer Society (<a href='http:\/\/www.scielo.br\/scielo.php?pid=0104-6500&script=sci_serial' target='CSEL'>JBCS<\/a>)<\/i>, Special Issue on Software Engineering for Multi-Agent Systems, July 2007, Vol. 13, No. 2, pp. 45-60. <a href='..\/Papers\/UMD\/2003\/JP\/JBCS-July-2007.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Zhenhua Yu,Yuanli Cai, and <u>Haiping Xu<\/u>, \"On Modeling Approach for Dynamic Software Architecture,\" <i>Journal of Xi'an Jiaotong University (<a href='http:\/\/www.jdxb.cn\/' target='CSEL'>JXJU<\/a>)<\/i>, February 2007, Vol. 41, No. 2, pp. 167-171 (in Chinese). <a href='..\/Papers\/UMD\/2003\/JP\/JXJU-2007.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, Zhiguo Zhang, and Sol M. Shatz, \"A Security Based Model for Mobile Agent Software Systems,\" <i>International Journal of Software Engineering and Knowledge Engineering (<a href='http:\/\/www.worldscientific.com\/worldscinet\/ijseke' target='CSEL'>IJSEKE<\/a>)<\/i>, August 2005, Vol. 15, No. 4, pp. 719-746. <a href='..\/Papers\/UMD\/2003\/JP\/IJSEKE-2005.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and Sol M. Shatz, \"ADK: An Agent Development Kit Based on a Formal Model for Multi-Agent Systems,\" <i>Journal of Automated Software Engineering (<a href='http:\/\/www.springer.com\/computer\/ai\/journal\/10515' target='CSEL'>AUSE<\/a>)<\/i>, October 2003, Vol. 10, No. 4, pp. 337-365. <a href='..\/Papers\/UMD\/2003\/JP\/ADK2003.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            }
+        ],
+        "umd91JP": [
+            {
+                "point": "<u>Haiping Xu<\/u> and Sol M. Shatz, \"A Framework for Model-Based Design of Agent-Oriented Software,\" <i>IEEE Transactions on Software Engineering (<a href='https:\/\/www.computer.org\/csdl\/trans\/ts\/2003\/01\/e0015-abs.html' target='CSEL'>IEEE TSE<\/a>)<\/i>, January 2003, Vol. 29, No. 1, pp. 15-30. <a href='..\/Papers\/UIC\/JP\/TSE.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Ravi K. Gedela, Sol M. Shatz, and <u>Haiping Xu<\/u>, \"Compositional Petri Net Models of Advanced Tasking in Ada-95,\" <i><a href='http:\/\/www.journals.elsevier.com\/computer-languages-systems-and-structures' target='CSEL'>Computer Languages<\/a><\/i>, July 1999, Vol.25, No.2, pp. 55-87. <a href='..\/Papers\/UIC\/JP\/Ada-95.pdf' target='CSEL'>PDF File<\/a> (download from <a href='http:\/\/www.sciencedirect.com\/science\/journal\/00960551' target='CSEL'>ScienceDirect<\/a>)",
+                "edit": false
+            },
+            {
+                "point": "Ravi K. Gedela, Sol M. Shatz, and <u>Haiping Xu<\/u>, \"Formal Modeling of Synchronization Methods for Concurrent Objects in Ada 95,\" <i><a href='http:\/\/www.sigada.org\/ada_letters\/' target='CSEL'>ACM SIGAda Ada Letters<\/a><\/i>, 1999, Volume XIX, Issue 3, pp. 211-220. Also appears in [GSX99c]",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, Xiaogang Ruan, Zengwu Chen, Shangxu Hu, and Haibo Ren, \"ICTS: Hypertext and Multi-Knowledge Source Based Intelligent Chinese Tutoring System,\" <i><a href='http:\/\/www.cipsc.org.cn\/jsip\/' target='CSEL'>Journal of Chinese Information Processing<\/a><\/i>, 1992, Vol. 6, No. 2, pp. 8-16 (in Chinese).",
+                "edit": false
+            },
+            {
+                "point": "Qiuping Hu, <u>Haiping Xu<\/u>, Yurun Zhang, and Chunhui Zhou, \"Software Design of an Expert Control System in Vacuum Distillation,\" <i><a href='http:\/\/www.hgzdh.cn\/w\/Default.htm' target='CSEL'>Control and Instruments in Chemical Industry<\/a><\/i>, 1992, Vol. 19, No. 4, pp. 25-29 (in Chinese).",
+                "edit": false
+            },
+            {
+                "point": "Xiaogang Ruan, <u>Haiping Xu<\/u>, and Zengwu Chen, \"Intelligent CAI and Chinese Tutoring System,\" <i>Communications of Computation and Information<\/i>, 1991, Vol. 2, No. 7, pp. 6-14 (in Chinese).",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, \"Software Design of Microcomputer Based Electronic Scalers,\" <i><a href='http:\/\/www.sipai.com\/hyfw\/pai_e.asp' target='CSEL'>Process Automation Instrumentation<\/a><\/i>, 1991, Vol. 12, No. 10, pp. 13-16 (in Chinese). <a href='..\/Papers\/ZJU\/DHC-1991.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, \"A Novel Design of Second Generation Expert Systems,\" <i>Communications of Computation and Information<\/i>, 1990, Vol. 1, No. 6, pp. 28-33 (in Chinese).",
+                "edit": false
+            }
+        ],
+        "books": [
+            {
+                "point": "<u>Haiping Xu<\/u> (Ed.), <i>Practical Applications of Agent-Based Technology<\/i>, <a href='http:\/\/www.intechopen.com\/' target='CSEL'>InTech<\/a>, March 2012, ISBN: 978-953-51-0276-2. (<a href='..\/Papers\/UMD\/2009\/BK\/Preface-Practical_Applications_of_Agent-Based_Technology.pdf' target='CSEL'>Preface<\/a>) (<a href='http:\/\/www.intechopen.com\/books\/practical-applications-of-agent-based-technology' target='CSEL'>Book Info<\/a>).",
+                "edit": false
+            },
+            {
+                "point": "Xiaoqin Zhang, <u>Haiping Xu<\/u>, and Bhavesh Shrestha, \"Building a Healthcare Multi-agent Simulation System with Role-Based Modeling,\" In R. Paranjape and A. Sadanand (Eds.), <i>Multi-Agent Systems for Healthcare Simulation and Modeling: Applications for System Improvement<\/i>, Chapter VI, <a href='http:\/\/www.igi-global.com\/' target='CSEL'>IGI Global<\/a>, August 2009, ISBN: 978-1605667720. <a href='..\/Papers\/UMD\/2009\/BK\/Mas-Health-Zhang.pdf' target='CSEL'>PDF File<\/a> (<a href='..\/Papers\/UMD\/2009\/BK\/NewRelease-August-2009.pdf' target='CSEL'>Book Info<\/a>)",
+                "edit": false
+            }
+        ],
+        "proceedings": [
+            {
+                "edit": false,
+                "point": "<u>Haiping Xu<\/u>, Sotoudeh Hamedi-Hagh, and Paolo Nesi (Eds.), <i>Proceedings of the 2017 IEEE International Conference on Smart City Innovations (<a href='http:\/\/ieee-smartworld.org\/2017\/sci\/' target='CSEL'>IEEE SCI 2017<\/a>)<\/i>, San Francisco, USA, August 4-8, 2017. (<a href='..\/Papers\/UMD\/2009\/BK\/IEEESCI2017_Proceedings_Foreword.pdf' target='CSEL'>Foreword<\/a>) (<a href='..\/Papers\/UMD\/2009\/BK\/IEEESCI2017_Proceedings_TOC.pdf' target='CSEL'>Table of Contents<\/a>) (Proceedings) <img src='.\/images\/new_a.gif' width='31' height='16'>"
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, Luca Foschini, and Jiannong Cao (Eds.), <i>Proceedings of the 5th IEEE International Conference on Mobile Cloud Computing, Services, and Engineering (<a href='http:\/\/www.mobile-cloud.net\/2017\/' target='CSEL'>IEEE Mobile Cloud 2017<\/a>)<\/i>, San Francisco, USA, April 7-9, 2017. (<a href='..\/Papers\/UMD\/2009\/BK\/MibileCloud2017_Proceedings_Foreword.pdf' target='CSEL'>Foreword<\/a>) (<a href='..\/Papers\/UMD\/2009\/BK\/MibileCloud2017_Proceedings_TOC.pdf' target='CSEL'>Table of Contents<\/a>) (<a href='http:\/\/ieeexplore.ieee.org\/xpl\/mostRecentIssue.jsp?punumber=7943264' target='CSEL'>Proceedings<\/a>) <img src='.\/images\/new_a.gif' width='31' height='16'>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> (Ed.), <i>Featured Topic Issue: Best Papers from SEKE2015<\/i>, International Journal of Software Engineering and Knowledge Engineering (<a href='http:\/\/www.worldscientific.com\/worldscinet\/ijseke' target='CSEL'>IJSEKE<\/a>), Vol. 25, Nos. 9 & 10, December 2015. (<a href='..\/Papers\/UMD\/2009\/BK\/IJSEKE-XU-2015-0.pdf' target='CSEL'>Guest Editor's Introduction<\/a>)",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> (Ed.), <i>Proceedings of the 27th International Conference on Software Engineering and Knowledge Engineering (<a href='http:\/\/www.ksi.edu\/seke\/seke15.html' target='CSEL'>SEKE 2015<\/a>)<\/i>, Pittsburgh, USA, July 6-8, 2015. (<a href='..\/Papers\/UMD\/2009\/BK\/SEKE2015_Proceedings_Foreword.pdf' target='CSEL'>Foreword<\/a>) (<a href='..\/Papers\/UMD\/2009\/BK\/SEKE2015_Proceedings_TableOfContents.pdf' target='CSEL'>Table of Contents<\/a>) (<a href='http:\/\/www.cis.umassd.edu\/~hxu\/cfp\/SEKE2015\/SEKE2015_Proceedings.pdf' target='CSEL'>Proceedings<\/a>)",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, Gerry Gao, Yan Bai, and George Roussos (Eds.), <i>Featured Topical Issue on Software Engineering and Knowledge Engineering for Mobile Cloud Computing and Services<\/i>, International Journal of Software Engineering and Knowledge Engineering (<a href='http:\/\/www.worldscientific.com\/worldscinet\/ijseke' target='CSEL'>IJSEKE<\/a>), Vol. 24, No. 7, September 2014. (<a href='..\/Papers\/UMD\/2009\/BK\/IJSEKE-XU-2014-Intro.pdf' target='CSEL'>Guest Editors' Introduction<\/a>)",
+                "edit": false
+            },
+            {
+                "point": "M. A. Karim Sadiq, <u>Haiping Xu<\/u>, Jaroslav Zendulka, and Adegboyega K. Ojo (Eds.), <i>Proceedings of the International Conference on Software Engineering Theory and Practice (SETP-08)<\/i>, Orlando, Florida, USA, July 7-10, 2008. ISRST 2008, ISBN 978-1-60651-005-6. (<a href='http:\/\/www.promoteresearch.org\/2008\/proceedings-listing-2008\/setp08.html' target='CSEL'>Book Info<\/a>) <a href='http:\/\/dblp.uni-trier.de\/pers\/hd\/x\/Xu:Haiping.html' target='CSEL'>DBLP:Haiping Xu<\/a>",
+                "edit": false
+            }
+        ],
+        "umd09CP": [
+            {
+                "edit": false,
+                "point": "Richard de Groof and <u>Haiping Xu<\/u>, \"Automatic Topic Discovery of Online Hospital Reviews Using an Improved LDA with Variational Gibbs Sampling,\" In <i>Proceedings of the 2017 IEEE International Conference on Big Data (<a href='http:\/\/cci.drexel.edu\/bigdata\/bigdata2017\/' target='CSEL'>IEEE BigData 2017<\/a>)<\/i>, BDTL 2017, Boston, MA, USA, December 11-14, 2017, pp. 3940-3947. <a href='..\/Papers\/UMD\/2009\/CP\/IEEE-BigData-2017-XU.pdf' target='CSEL'>PDF File<\/a> <img src='.\/images\/new_a.gif' width='31' height='16'>"
+            },
+            {
+                "point": "Jean Rahme and <u>Haiping Xu<\/u>, \"Dependable and Reliable Cloud-Based Systems Using Multiple Software Spare Components,\" In <i>Proceedings of the 14th IEEE International Conference on Advanced and Trusted Computing (<a href='http:\/\/ieee-smartworld.org\/2017\/atc\/' target='CSEL'>IEEE ATC 2017<\/a>)<\/i>, San Francisco, CA, USA, August 4-8, 2017, pp. 1462-1469. <a href='..\/Papers\/UMD\/2009\/CP\/IEEE-ATC-2017-XU.pdf' target='CSEL'>PDF File<\/a> <img src='.\/images\/new_a.gif' width='31' height='16'>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and Amol Gade, \"Smart Real Estate Assessments Using Structured Deep Neural Networks,\" In <i>Proceedings of the 2017 IEEE International Conference on Smart City Innovations (<a href='http:\/\/ieee-smartworld.org\/2017\/sci\/' target='CSEL'>IEEE SCI 2017<\/a>)<\/i>, San Francisco, CA, USA, August 4-8, 2017, pp. 1126-1132. <a href='..\/Papers\/UMD\/2009\/CP\/IEEE-SCI-2017-XU.pdf' target='CSEL'>PDF File<\/a> <img src='.\/images\/new_a.gif' width='31' height='16'>",
+                "edit": false
+            },
+            {
+                "edit": false,
+                "point": "Jean Rahme and <u>Haiping Xu<\/u>, \"Preventive Maintenance for Cloud-Based Software Systems Subject to Non-Constant Failure Rates,\" In <i>Proceedings of the 14th IEEE International Conference on Advanced and Trusted Computing (<a href='http:\/\/ieee-smartworld.org\/2017\/atc\/' target='CSEL'>IEEE ATC 2017<\/a>)<\/i>, San Francisco, CA, USA, August 4-8, 2017, pp. 1576-1581. <a href='..\/Papers\/UMD\/2009\/CP\/IEEE-ATC-2017-XU-2.pdf' target='CSEL'>PDF File<\/a> <img src='.\/images\/new_a.gif' width='31' height='16'>"
+            },
+            {
+                "point": "Lexin Zhou and <u>Haiping Xu<\/u>, \"An Efficient Double Auction Mechanism for On-Demand Transport Services in Cloud-Based Mobile Commerce,\" In <i>Proceedings of the 5th IEEE International Conference on Mobile Cloud Computing, Services, and Engineering (<a href='http:\/\/www.mobile-cloud.net\/' target='CSEL'>IEEE Mobile Cloud 2017<\/a>)<\/i>, San Francisco, CA, USA, April 6-8, 2017, pp. 25-30. <a href='..\/Papers\/UMD\/2009\/CP\/MobileCloud-2017-XU.pdf' target='CSEL'>PDF File<\/a> <img src='.\/images\/new_a.gif' width='31' height='16'>",
+                "edit": false
+            },
+            {
+                "point": "Yuhan Zhang and <u>Haiping Xu<\/u>, \"SLTM: A Sentence Level Topic Model for Analysis of Online Reviews,\" In <i>Proceedings of the 28th International Conference on Software Engineering and Knowledge Engineering (<a href='http:\/\/ksiresearchorg.ipage.com\/seke\/seke16.html' target='CSEL'>SEKE 2016<\/a>)<\/i>, San Francisco, CA, USA, July 1-3, 2016, pp. 449-453. <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2016-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Jean Rahme and <u>Haiping Xu<\/u>, \"Reliability-Based Software Rejuvenation Scheduling for Cloud-Based Systems,\" In <i>Proceedings of the 27th International Conference on Software Engineering and Knowledge Engineering (<a href='http:\/\/ksiresearchorg.ipage.com\/seke\/seke15.html' target='CSEL'>SEKE 2015<\/a>)<\/i>, Pittsburgh, PA, USA, July 6-8, 2015, pp. 298-303. <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2015-XU-2.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and Deepti Bhalerao, \"A Reliable and Secure Cloud Storage Schema Using Multiple Service Providers,\" In <i>Proceedings of the 27th International Conference on Software Engineering and Knowledge Engineering (<a href='http:\/\/ksiresearchorg.ipage.com\/seke\/seke15.html' target='CSEL'>SEKE 2015<\/a>)<\/i>, Pittsburgh, PA, USA, July 6-8, 2015, pp. 116-121 (<b>Best Paper Award<\/b>). <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2015-XU-1.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and Arturo Li, \"Two-Level Smart Search Engine Using Ontology-Based Semantic Reasoning,\" In <i>Proceedings of the 26th International Conference on Software Engineering and Knowledge Engineering (<a href='http:\/\/www.ksi.edu\/seke\/seke14.html' target='CSEL'>SEKE 2014<\/a>)<\/i>, Vancouver, Canada, July 1-3, 2014, pp. 648-652. <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2014-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Ran Wei and <u>Haiping Xu<\/u>, \"A Formal Cost-Effectiveness Analysis Model for Product Evaluation in E-Commerce,\" In <i>Proceedings of the 25th International Conference on Software Engineering and Knowledge Engineering (<a href='http:\/\/www.ksi.edu\/seke\/seke13.html' target='CSEL'>SEKE 2013<\/a>)<\/i>, Boston, MA, USA, June 27-29, 2013, pp. 287-293. <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2013-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Daniel F. Fitch and <u>Haiping Xu<\/u>, \"A Petri Net Model for Secure and Fault-Tolerant Cloud-Based Information Storage,\" In <i>Proceedings of the 24th International Conference on Software Engineering and Knowledge Engineering (<a href='http:\/\/www.ksi.edu\/seke\/seke12.html' target='CSEL'>SEKE 2012<\/a>)<\/i>, San Francisco Bay, CA, USA, July 1-3, 2012, pp. 333-339. <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2012-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Harmeet Chawla, <u>Haiping Xu<\/u>, and MengChu Zhou, \"A Real-Time Reliability Model for Ontology-Based Dynamic Web Service Composition,\" In <i>Proceedings of the 23rd International Conference on Software Engineering and Knowledge Engineering (<a href='http:\/\/www.ksi.edu\/seke\/seke11.html' target='CSEL'>SEKE 2011)<\/i>, Miami, FL, USA, July 7-9, 2011, pp. 153-158. <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2011-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Benjamin J. Ford, <u>Haiping Xu<\/u>, and Iren Valova, \"Identifying Suspicious Bidders Utilizing Hierarchical Clustering and Decision Trees,\" In <i>Proceedings of the 12th International Conference on Artificial Intelligence (<a href='http:\/\/www.world-academy-of-science.org\/worldcomp10\/ws\/conferences\/icai10.html' target='CSEL'>ICAI'10<\/a>)<\/i>, Las Vegas, Nevada, USA, July 12-15, 2010, pp. 195-201. <a href='..\/Papers\/UMD\/2009\/CP\/ICAI-2010-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Ankit Goel, <u>Haiping Xu<\/u>, and Sol M. Shatz, \"A Multi-State Bayesian Network for Shill Verification in Online Auctions,\" In <i>Proceedings of the 22nd International Conference on Software Engineering and Knowledge Engineering (<a href='http:\/\/www.ksi.edu\/seke\/seke10.html' target='CSEL'>SEKE 2010<\/a>)<\/i>, Redwood City, San Francisco Bay, USA, July 1-3, 2010, pp. 279-285. <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2010-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Fei Dong, Sol M. Shatz, and <u>Haiping Xu<\/u>, \"An Empirical Evaluation on the Relationship Between Final Auction Price and Shilling Activity in Online Auctions,\" In <i>Proceedings of the 22nd International Conference on Software Engineering and Knowledge Engineering (<a href='http:\/\/www.ksi.edu\/seke\/seke10.html' target='CSEL'>SEKE 2010<\/a>)<\/i>, Redwood City, San Francisco Bay, USA, July 1-3, 2010, pp. 286-291. <a href='..\/Papers\/UMD\/2009\/CP\/SEKE-2010-Fei.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Monika Shrestha, Liudong Xing, and <u>Haiping Xu<\/u>, \"Complete Sequence Generation Algorithm for Reliability Analysis of Dynamic Systems with Sequence-Dependent Failures,\" In <i>Proceedings of the 16th ISSAT International Conference on Reliability and Quality in Design (<a href='http:\/\/www.issatconferences.org\/' target='CSEL'>RQD'10<\/a>)<\/i>, Washington D.C., August 5-7, 2010, pp. 383-386. <a href='..\/Papers\/UMD\/2009\/CP\/RQD-2010.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, Christopher K. Bates, and Sol M. Shatz, \"Real-Time Model Checking for Shill Detection in Live Online Auctions,\" In <i>Proceedings of the International Conference on Software Engineering Research and Practice (<a href='http:\/\/www.world-academy-of-science.org\/worldcomp09\/ws\/conferences\/serp09\/' target='CSEL'>SERP'09<\/a>)<\/i>, July 13-16, 2009, Las Vegas, Nevada, USA, pp. 134-140. <a href='..\/Papers\/UMD\/2009\/CP\/SERP-2009-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            }
+        ],
+        "umd03CP": [
+            {
+                "point": "Benjamin J. Ford, <u>Haiping Xu<\/u>, Christopher K. Bates, and Sol M. Shatz, \"Model-Based Specification of Flexible and Complex Bidding Strategies in Agent-Based Online Auctions,\" In <i>Proceedings of the 6th International Conference on Information Technology: New Generations (<a href='http:\/\/www.itng.info\/' target='CSEL'>ITNG 2009<\/a>)<\/i>, April 27-29, 2009, Las Vegas, Nevada, USA, pp. 894-900. <a href='..\/Papers\/UMD\/2003\/CP\/ITNG-2009-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Fei Dong, Sol M. Shatz, and <u>Haiping Xu<\/u>, \"Inference of Online Auction Shills Using Dempster-Shafer Theory,\" In <i>Proceedings of the 6th International Conference on Information Technology: New Generations (<a href='http:\/\/www.itng.info\/' target='CSEL'>ITNG 2009<\/a>)<\/i>, April 27-29, 2009, Las Vegas, Nevada, USA, pp. 908-914. <a href='..\/Papers\/UMD\/2003\/CP\/ITNG-2009-Shatz.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Abhinay Reddyreddy and <u>Haiping Xu<\/u>, \"Securing Service-Oriented Systems Using State-Based XML Firewall,\" In <i>Proceedings of the 20th International Conference on Software Engineering and Knowledge Engineering (<a href='http:\/\/www.ksi.edu\/seke\/seke08.html' target='CSEL'>SEKE'2008<\/a>)<\/i>, July 1-3, 2008, Redwood City, San Francisco Bay, California, USA, pp. 512-518. <a href='..\/Papers\/UMD\/2003\/CP\/SEKE-2008-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, Sol M. Shatz, and Christopher K. Bates, \"A Framework for Agent-Based Trust Management in Online Auctions,\" In <i>Proceedings of the 5th International Conference on Information Technology: New Generations (<a href='http:\/\/www.itng.info\/' target='CSEL'>ITNG 2008<\/a>)<\/i>, April 7-9, 2008, Las Vegas, Nevada, USA, pp. 149-155. <a href='..\/Papers\/UMD\/2003\/CP\/ITNG-2008-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and Liudong Xing, \"Formal Semantics and Verification of Dynamic Reliability Block Diagrams for System Reliability Modeling,\" In <i>Proceedings of the 11th International Conference on Software Engineering and Applications (<a href='http:\/\/www.iasted.org\/conferences\/pastinfo-591.html' target='CSEL'>SEA 2007<\/a>)<\/i>, November 19-21, 2007, Cambridge, Massachusetts, USA, pp. 155-162. <a href='http:\/\/www.actapress.com\/PaperInfo.aspx?PaperID=32053' target='CSEL'>Abstract<\/a> <a href='..\/Papers\/UMD\/2003\/CP\/SEA-2007-XU.pdf' target='CSEL'>PDF File<\/a> <a href='..\/Papers\/UMD\/Talks\/SEA-2007-XU-Talk.pdf' target='CSEL'>Slides<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Rinkesh Patel, <u>Haiping Xu<\/u>, and Ankit Goel, \"Real-Time Trust Management in Agent Based Online Auction Systems,\" In <i>Proceedings of the Nineteenth International Conference on Software Engineering and Knowledge Engineering (<a href='http:\/\/www.ksi.edu\/seke\/seke07.html' target='CSEL'>SEKE'2007<\/a>)<\/i>, July 9-11, 2007, Boston, USA, pp. 244-250. <a href='..\/Papers\/UMD\/2003\/CP\/SEKE-2007-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Jan Bergandy, Paul Bergstein, Boleslaw Mikolajczak, and <u>Haiping Xu<\/u>, \"Designing Software Engineering Option within Computer Science Bachelor of Science Program,\" In <i>Proceedings of the 2007 International Conference on Frontiers in Education: Computer Science and Computer Engineering (<a href='http:\/\/www.world-academy-of-science.org\/past_events\/ws\/conferences\/2007\/index.html' target='CSEL'>FECS'07<\/a>)<\/i>, June 25-28, 2007, Las Vegas, Nevada, USA, pp. 290-296. <a href='..\/Papers\/UMD\/2003\/CP\/FECS-2007.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Xiaoqin Zhang, <u>Haiping Xu<\/u>, and Bhavesh Shrestha, \"Developing Multi-Agent Systems with Automatic Agent Generation and Dynamic Task Allocation Mechanisms,\" In <i>Proceedings of the Sixth International Joint Conference on Autonomous Agents and Multi-Agent Systems (<a href='http:\/\/aamas2007.org\/' target='CSEL'>AAMAS 2007<\/a>)<\/i>, May 14-18, 2007, Honolulu, Hawaii, USA, pp. 1246-1248. <a href='..\/Papers\/UMD\/2003\/CP\/Role-AAMAS-07-short.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Mihir M. Ayachit and <u>Haiping Xu<\/u>, \"A Petri Net Based XML Firewall Security Model for Web Services Invocation,\" In <i>Proceedings of the International Conference on Communication, Network, and Information Security (<a href='http:\/\/www.iasted.org\/conferences\/pastinfo-547.html' target='CSEL'>CNIS 2006<\/a>)<\/i>, October 9-11, 2006, MIT Faculty Club, Cambridge, Massachusetts, USA, pp. 61-67. <a href='http:\/\/www.actapress.com\/Abstract.aspx?paperId=28658' target='CSEL'>Abstract<\/a> <a href='..\/Papers\/UMD\/2003\/CP\/CNIS-2006.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Xiaoqin Zhang and <u>Haiping Xu<\/u>, \"Towards Automated Development of Multi-Agent Systems Using RADE,\" In <i>Proceedings of the 2006 International Conference on Artificial Intelligence (<a href='http:\/\/www.world-academy-of-science.org\/past_events\/ws\/conferences\/2006\/2006.html' target='CSEL'>ICAI'06<\/a>)<\/i>, June 26-29, 2006, Las Vegas, Nevada, USA, pp. 44-50. <a href='..\/Papers\/UMD\/2003\/CP\/ICA4053.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Yi-Tsung Cheng and <u>Haiping Xu<\/u>, \"A Formal Approach to Detecting Shilling Behaviors in Concurrent Online Auctions,\" In <i>Proceedings of the 8th International Conference on Enterprise Information Systems (<a href='http:\/\/www.iceis.org\/ICEIS2006\/' target='CSEL'>ICEIS 2006<\/a>)<\/i>, May 23-27, 2006, Paphos, Cyprus, pp. 375-381. <a href='..\/Papers\/UMD\/2003\/CP\/ICEIS-2006-XU.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and Xiaoqin Zhang, \"A Methodology for Role-Based Modeling of Open Multi-Agent Software Systems,\" In <i>Proceedings of the 7th International Conference on Enterprise Information Systems (<a href='http:\/\/www.iceis.org\/iceis2005\/' target='CSEL'>ICEIS 2005<\/a>)<\/i>, May 24-28, 2005, Miami, Florida, USA, pp. 246-253. <a href='..\/Papers\/UMD\/2003\/CP\/ICEIS-2005-XU.pdf' target='CSEL'>PDF File<\/a> <a href='..\/Papers\/UMD\/Talks\/ICEIS-2005.ppt' target='CSEL'>Slides<\/a>",
+                "edit": false
+            }
+        ],
+        "umd91CP": [
+            {
+                "point": "<u>Haiping Xu<\/u> and Sol M. Shatz, \"A Framework for Modeling Agent-Oriented Software,\" In <i>Proceedings of the IEEE 21st International Conference on Distributed Computing Systems (<a href='http:\/\/cactus.eas.asu.edu\/ICDCS2001\/' target='CSEL'>ICDCS-21<\/a>)<\/i>, April 16-19, 2001, Phoenix, Arizona, USA, pp. 57-64. <a href='..\/Papers\/UIC\/ICDCS.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and Sol M. Shatz, \"An Agent-Based Petri Net Model with Application to Seller\/Buyer Design in Electronic Commerce,\" In <i>Proceedings of the IEEE 5th International Symposium on Autonomous Decentralized Systems (<a href='https:\/\/www.computer.org\/csdl\/proceedings\/isads\/2001\/1065\/00\/index.html' target='CSEL'>ISADS 2001<\/a>)<\/i>, March 26-28, 2001, Dallas, Texas, USA, pp. 11-18. <a href='..\/Papers\/UIC\/ISADS-2001.PDF' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and Sol M. Shatz, \"Extending G-Nets to Support Inheritance Modeling in Concurrent Object-Oriented Design,\" In <i>Proceedings of the IEEE International Conference on Systems, Man, and Cybernetics (<a href='http:\/\/ieeexplore.ieee.org\/xpl\/mostRecentIssue.jsp?punumber=7099' target='CSEL'>SMC 2000<\/a>)<\/i>, October 8-11, 2000, Nashville, Tennessee, USA, pp. 3128-3133. <a href='..\/Papers\/UIC\/IEEESMC.PDF' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Ravi K. Gedela, Sol M. Shatz, and <u>Haiping Xu<\/u>, \"Formal Modeling of Synchronization Methods for Concurrent Objects in Ada 95,\" In <i>Proceedings of the ACM Annual International Conference on Ada (SIGAda'99)<\/i>, October 17-21, 1999, Redondo Beach, CA, USA, pp. 211-220. <a href='..\/Papers\/UIC\/SIGAda99.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Kai Warendorf, <u>Haiping Xu<\/u>, and Antoon Verhoeven, \"Case-Based Instructional Planning for Learning in a Context,\" In <i>Proceedings of the Joint 1997 Pacific Asian Conference on Expert Systems and Singapore International Conference on Intelligent Systems (PACES\/SPICIS 97)<\/i>, February 24-27, 1997, Singapore, pp. 354-360. <a href='..\/Papers\/NTU\/case-based-instructional-planning.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Xiaogang Ruan, Shangxu Hu, Zengwu Chen, and <u>Haiping Xu<\/u>, \"The Presentation and Inference of Chinese Language Knowledge,\" In <i>Proceedings of the International Conference on Information & System<\/i>, A.M.S.E., October 1991, Hangzhou, China.",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, Zengwu Chen, and Shangxu Hu, \"Design and Implementation Techniques for Intelligent Chinese Tutoring Systems,\" In <i>Proceedings of the Second National Conference on Computer Application<\/i>, October 1991, Beijing, China, pp. 988-991 (in Chinese).",
+                "edit": false
+            }
+        ],
+        "researchPosters": [
+            {
+                "edit": false,
+                "point": "Daniel Noyes, Hong Liu, Paul Fortier, and <u>Haiping Xu<\/u>, \"Security Improvement of USB Technology,\" <i>Cyber Security Poster<\/i>, 2017 IEEE International Symposium on Technologies for Homeland Security (<a href='http:\/\/www.ieee-hst.org\/2017\/tp-apr25.htm' target='CSEL'>IEEE HST 2017<\/a>), Waltham, MA, USA, April 25-26, 2017."
+            },
+            {
+                "edit": false,
+                "point": "Jean Rahme and <u>Haiping Xu<\/u>, \"Formal Generation of Reliability Functions for Cloud-Based Two-Hot Spare Gates,\" <i>Research Poster<\/i>, 22nd Annual Sigma Xi Research Exhibition, UMass Dartmouth, MA, USA, April 20-21, 2016."
+            },
+            {
+                "edit": false,
+                "point": "Monika Shrestha, Liudong Xing, and <u>Haiping Xu<\/u>, \"Reliability Analysis of Dynamic Systems with Sequence-Dependent Failures,\" <i>Research Poster<\/i>, 16th Annual Sigma Xi Research Exhibition, UMass Dartmouth, MA, USA, April 21-22, 2010."
+            }
+        ],
+        "techReports": [
+            {
+                "point": "Ryan Robidoux and <u>Haiping Xu<\/u>, \"Automated Verification of Dynamic Reliability Block Diagrams Using Colored Petri Nets,\" <i>Technical Report<\/i>, Computer and Information Science Department, University of Massachusetts Dartmouth, March 2008. <a href='..\/Papers\/UMD\/2003\/TR\/Auto-Verification-DRBD-TR.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, Sol M. Shatz, and Chris Bates, \"A Framework for Agent-Based Trust Management in Online Auctions,\" <i>Technical Report<\/i>, Computer and Information Science Department, University of Massachusetts Dartmouth, December 2007. <a href='..\/Papers\/UMD\/2003\/TR\/ITNG-2008-XU-TR.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Zhenhua Yu,Yuanli Cai, and <u>Haiping Xu<\/u>, \"A Novel \u03c0-Net Based Architecture Description Language for Multi-Agent Systems,\" <i>Technical Report<\/i>, Computer and Information Science Department, University of Massachusetts Dartmouth, September 2006.",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and and Yi-Tsung Cheng, \"Model Checking Bidding Behaviors in Internet Concurrent Auctions,\" <i>Technical Report<\/i>, Computer and Information Science Department, University of Massachusetts Dartmouth, January 2006. <a href='..\/Papers\/UMD\/2003\/TR\/OnlineAuction-TR.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "Rinkesh J. Patel and <u>Haiping Xu<\/u>, \"Implementation of the Role-Based Agent Development Environment (RADE) Prototype,\" <i>Technical Report<\/i>, Computer and Information Science Department, University of Massachusetts Dartmouth, January 2006.",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, Xiaoqin Zhang and Rinkesh J. Patel, \"Towards a Role-Based Agent Development Environment for Open Multi-Agent Software Systems,\" <i>Technical Report<\/i>, Computer and Information Science Department, University of Massachusetts Dartmouth, October 2005.",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and Sol M. Shatz, \"Model-Based Development of Intelligent Communicating Agents for Multi-Agent Systems,\" <i>Technical Report<\/i>, Computer Science Department, University of Illinois at Chicago, August 2002. <a href='..\/Papers\/UIC\/ADK2002.pdf' target='CSEL'>PDF File<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and Sol M. Shatz, \"A Design Model for Intelligent Mobile Agent Software Systems,\" <i>Technical Report<\/i>, Computer Science Department, University of Illinois at Chicago, May 2002.",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, \"Formal Methods in Agent-Oriented Software Engineering,\" <i>Lecture on CS542: Distributed Software Engineering<\/i>, Computer Science Department, University of Illinois at Chicago, October 2001.",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, \"Mobile Agents,\" <i>Ph.D. Student Seminar<\/i>, Computer Science Department, University of Illinois at Chicago, June 2001. <a href='..\/Papers\/UIC\/MA-Seminar-2.PDF' target='CSEL'>Slides<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u> and Sol M. Shatz, \"Formal Methods in Agent-Oriented Design and Analysis,\" <i>Proposal for Book Chapters in Intelligent Agent Software Engineering<\/i>, EECS Department, University of Illinois at Chicago, March 2001.",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, \"From Object to Agent: An Approach to Using Formal Methods in Software Design and Analysis,\" <i>Ph.D. Thesis Proposal<\/i>, EECS Department, University of Illinois at Chicago, Feb. 2001. <a href='..\/Papers\/UIC\/Thesis-Proposal.pdf' target='CSEL'>PDF File<\/a> <a href='..\/Papers\/UIC\/Thesis-Present-2.pdf' target='CSEL'>Slides<\/a>",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, \"Java Security Model and Bytecode Verification,\" <i>Technical Report EECS-12-99<\/i>, EECS Department, University of Illinois at Chicago, December 1999.",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, \"Modeling and Analyzing Search\/Insert\/Delete Problem by Petri Nets,\" <i>Technical Report EECS-05-99<\/i>, EECS Department, University of Illinois at Chicago, May 1999.",
+                "edit": false
+            }
+        ],
+        "thesisProject": [
+            {
+                "point": "<u>Haiping Xu<\/u>, \"A Model-Based Approach for Development of Multi-Agent Software Systems,\" <i><a href='..\/Papers\/UIC\/PhD\/Thesis.html' target='CSEL'>Ph.D. Thesis<\/a><\/i>, Department of Computer Science, University of Illinois at Chicago, March 2003. <b>Outstanding Ph.D. Thesis Award 2004<\/b>, Thesis Supervisor: Dr. Sol M. Shatz.",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, \"Task Partitioning and Allocation on Supercomputers and Network of Workstations,\" <i>Master's Project<\/i>, Wright State University, Dayton, OH, USA, May 1998, Project Supervisor: Dr. Karen Tomko.",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, \"Development of Intelligent Chinese Tutoring System,\" <i>Master's Thesis<\/i>, Zhejiang University, Hangzhou, China, January 1992 (in Chinese), Thesis Supervisors: Dr. Zengwu Chen and Dr. Shangxu Hu.",
+                "edit": false
+            },
+            {
+                "point": "<u>Haiping Xu<\/u>, \"Computer-Aided Design of Quadratic Regulator,\" <i>Undergraduate Thesis<\/i>, Zhejiang University, Hangzhou, China, July 1989 (in Chinese).",
+                "edit": false
+            }
+        ]
+    }
+}

@@ -1,0 +1,363 @@
+<div id="publicationsContainer">
+    <div id="sideNavContainer">
+        <div id="sideNav">
+            <h4>In Page Navigation</h4>
+            <ul>
+                <a href="#" class="parent-link">
+                    <li>
+                        <i class="material-icons">keyboard_arrow_right</i> Journal Papers</li>
+                </a>
+                <ul class="subUL">
+                    <a href="#JPH31" class="scroller-link">
+                        <li>2009-2017 (UMassD)</li>
+                    </a>
+                    <a href="#JPH32" class="scroller-link">
+                        <li>2003-2009 (UMassD)</li>
+                    </a>
+                    <a href="#JPH33" class="scroller-link">
+                        <li>1990-2003 (Others)</li>
+                    </a>
+                </ul>
+                <a href="#BCh2" class="scroller-link">
+                    <li>Books / Book Chapters</li>
+                </a>
+                <a href="#Bh2" class="scroller-link">
+                    <li>Proceedings / Special Issues</li>
+                </a>
+                <a href="#" class="parent-link">
+                    <li>
+                        <i class="material-icons">keyboard_arrow_right</i> Conference Papers</li>
+                </a>
+                <ul class="subUL">
+                    <a href="#CPH31" class="scroller-link">
+                        <li>2009-2017 (UMassD)</li>
+                    </a>
+                    <a href="#CPH32" class="scroller-link">
+                        <li>2003-2009 (UMassD)</li>
+                    </a>
+                    <a href="#CPH33" class="scroller-link">
+                        <li>1991-2003 (Others)</li>
+                    </a>
+                </ul>
+                <a href="#RP1" class="scroller-link">
+                    <li>Research Posters</li>
+                </a>
+                <a href="#TRh2" class="scroller-link">
+                    <li>Technical Reports</li>
+                </a>
+                <a href="#TPh2" class="scroller-link">
+                    <li>Thesis and Project</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div id="publicationsContent">
+        <h2 id="JPH2" class="pos-rel">
+            Journal Papers (1990-2017) [{{publications.umd09JP.length + publications.umd03JP.length + publications.umd91JP.length}}]
+            <div class="edit-item" style="padding:8px 0;" ng-if="$root.isAdmin && $root.loggedIn">
+                <md-button class="md-raised md-primary" ng-click="savePub()">Save Changes</md-button>
+                <md-button class="flat md-warn" ng-click="revert()">Revert</md-button>
+            </div>
+        </h2>
+        <div id="JPContainer" class="pos-rel">
+            <md-progress-linear class="loading" ng-show="loading" md-mode="indeterminate"></md-progress-linear>
+            <h3 id="JPH31" class="pos-rel">
+                At UMass Dartmouth (2009-2017) [{{publications.umd09JP.length}}]
+                <div class="edit-item" style="padding:8px 0;" ng-if="$root.isAdmin && $root.loggedIn">
+                    <md-button aria-label="Add New" class="md-icon-button nopadding nomargin" ng-if="$root.isAdmin" ng-click="addPoint(publications.umd09JP)">
+                        <i class="material-icons">add_circle</i>
+                    </md-button>
+                </div>
+            </h3>
+            <div ng-model="publications.umd09JP" ui-sortable="sortingOptions" class="grad-thesis" style="min-height:84px;">
+                <div ng-repeat="publication in publications.umd09JP" class="umdCard {{($root.isAdmin && !publication.edit) ? 'drag' : 'unsortable'}} pos-rel item-admin-edit"
+                    ng-class="publication.edit ? 'unsortable' : ''">
+                    <span ng-bind-html="publication.point" ng-if="!publication.edit"></span>
+                    <div class="edit-item" ng-if="$root.isAdmin && $root.loggedIn">
+                        <md-button aria-label="Delete" class="md-icon-button nopadding nomargin" ng-click="deletePoint(publications.umd09JP, $index)">
+                            <i class="material-icons">delete</i>
+                        </md-button>
+                        <md-button aria-label="Edit" class="md-icon-button nopadding nomargin" ng-click="publication.edit = !publication.edit">
+                            <i class="material-icons">{{publication.edit ? 'check_circle' : 'edit'}}</i>
+                        </md-button>
+                    </div>
+                    <md-input-container class="md-block nomargin" ng-if="publication.edit">
+                        <textarea autofocus ng-model="publication.point" rows="3" aria-label="Edit">{{publication.point}}</textarea>
+                    </md-input-container>
+                </div>
+            </div>
+            <h3 id="JPH32" class="pos-rel">
+                At UMass Dartmouth (2003-2009) [{{publications.umd03JP.length}}]
+                <div class="edit-item" style="padding:8px 0;" ng-if="$root.isAdmin && $root.loggedIn">
+                    <md-button aria-label="Add New" class="md-icon-button nopadding nomargin" ng-if="$root.isAdmin" ng-click="addPoint(publications.umd03JP)">
+                        <i class="material-icons">add_circle</i>
+                    </md-button>
+                </div>
+            </h3>
+            <div ng-model="publications.umd03JP" ui-sortable="sortingOptions" class="grad-thesis" style="min-height:84px;">
+                <div ng-repeat="publication in publications.umd03JP" class="umdCard {{($root.isAdmin && !publication.edit) ? 'drag' : 'unsortable'}} pos-rel item-admin-edit"
+                    ng-class="publication.edit ? 'unsortable' : ''">
+                    <span ng-bind-html="publication.point" ng-if="!publication.edit"></span>
+                    <div class="edit-item" ng-if="$root.isAdmin && $root.loggedIn">
+                        <md-button aria-label="Delete" class="md-icon-button nopadding nomargin" ng-click="deletePoint(publications.umd03JP, $index)">
+                            <i class="material-icons">delete</i>
+                        </md-button>
+                        <md-button aria-label="Edit" class="md-icon-button nopadding nomargin" ng-click="publication.edit = !publication.edit">
+                            <i class="material-icons">{{publication.edit ? 'check_circle' : 'edit'}}</i>
+                        </md-button>
+                    </div>
+                    <md-input-container class="md-block nomargin" ng-if="publication.edit">
+                        <textarea autofocus ng-model="publication.point" rows="3" aria-label="Edit">{{publication.point}}</textarea>
+                    </md-input-container>
+                </div>
+            </div>
+            <h3 id="JPH33" class="pos-rel">
+                Before Joining UMass Dartmouth (1990-2003) [{{publications.umd91JP.length}}]
+                <div class="edit-item" style="padding:8px 0;" ng-if="$root.isAdmin && $root.loggedIn">
+                    <md-button aria-label="Add New" class="md-icon-button nopadding nomargin" ng-if="$root.isAdmin" ng-click="addPoint(publications.umd91JP)">
+                        <i class="material-icons">add_circle</i>
+                    </md-button>
+                </div>
+            </h3>
+            <div ng-model="publications.umd91JP" ui-sortable="sortingOptions" class="grad-thesis" style="min-height:84px;">
+                <div ng-repeat="publication in publications.umd91JP" class="umdCard {{($root.isAdmin && !publication.edit) ? 'drag' : 'unsortable'}} pos-rel item-admin-edit"
+                    ng-class="publication.edit ? 'unsortable' : ''">
+                    <span ng-bind-html="publication.point" ng-if="!publication.edit"></span>
+                    <div class="edit-item" ng-if="$root.isAdmin && $root.loggedIn">
+                        <md-button aria-label="Delete" class="md-icon-button nopadding nomargin" ng-click="deletePoint(publications.umd91JP, $index)">
+                            <i class="material-icons">delete</i>
+                        </md-button>
+                        <md-button aria-label="Edit" class="md-icon-button nopadding nomargin" ng-click="publication.edit = !publication.edit">
+                            <i class="material-icons">{{publication.edit ? 'check_circle' : 'edit'}}</i>
+                        </md-button>
+                    </div>
+                    <md-input-container class="md-block nomargin" ng-if="publication.edit">
+                        <textarea autofocus ng-model="publication.point" rows="3" aria-label="Edit">{{publication.point}}</textarea>
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+        <h2 id="BCh2" class="pos-rel">
+            Books / Book Chapters (2009-2016)
+            <div class="edit-item" style="padding:8px 0;" ng-if="$root.isAdmin && $root.loggedIn">
+                <md-button aria-label="Add New" class="md-icon-button nopadding nomargin" ng-if="$root.isAdmin" ng-click="addPoint(publications.books)">
+                    <i class="material-icons">add_circle</i>
+                </md-button>
+            </div>
+        </h2>
+        <div ng-model="publications.books" ui-sortable="sortingOptions" class="grad-thesis paddingTop" style="min-height:84px;" id="BCContainer">
+            <div ng-repeat="publication in publications.books" class="cardNoTitle {{($root.isAdmin && !publication.edit) ? 'drag' : 'unsortable'}} pos-rel item-admin-edit"
+                ng-class="publication.edit ? 'unsortable' : ''">
+                <span ng-bind-html="publication.point" ng-if="!publication.edit"></span>
+                <div class="edit-item" ng-if="$root.isAdmin && $root.loggedIn">
+                    <md-button aria-label="Delete" class="md-icon-button nopadding nomargin" ng-click="deletePoint(publications.books, $index)">
+                        <i class="material-icons">delete</i>
+                    </md-button>
+                    <md-button aria-label="Edit" class="md-icon-button nopadding nomargin" ng-click="publication.edit = !publication.edit">
+                        <i class="material-icons">{{publication.edit ? 'check_circle' : 'edit'}}</i>
+                    </md-button>
+                </div>
+                <md-input-container class="md-block nomargin" ng-if="publication.edit">
+                    <textarea autofocus ng-model="publication.point" rows="3" aria-label="Edit">{{publication.point}}</textarea>
+                </md-input-container>
+            </div>
+        </div>
+        <h2 id="Bh2" class="pos-rel">
+            Proceedings / Special Issues (2008-2017)
+            <div class="edit-item" style="padding:8px 0;" ng-if="$root.isAdmin && $root.loggedIn">
+                <md-button aria-label="Add New" class="md-icon-button nopadding nomargin" ng-if="$root.isAdmin" ng-click="addPoint(publications.proceedings)">
+                    <i class="material-icons">add_circle</i>
+                </md-button>
+            </div>
+        </h2>
+        <div ng-model="publications.proceedings" ui-sortable="sortingOptions" class="grad-thesis paddingTop" style="min-height:84px;"
+            id="BCContainer">
+            <div ng-repeat="publication in publications.proceedings" class="cardNoTitle {{($root.isAdmin && !publication.edit) ? 'drag' : 'unsortable'}} pos-rel item-admin-edit"
+                ng-class="publication.edit ? 'unsortable' : ''">
+                <span ng-bind-html="publication.point" ng-if="!publication.edit"></span>
+                <div class="edit-item" ng-if="$root.isAdmin && $root.loggedIn">
+                    <md-button aria-label="Delete" class="md-icon-button nopadding nomargin" ng-click="deletePoint(publications.proceedings, $index)">
+                        <i class="material-icons">delete</i>
+                    </md-button>
+                    <md-button aria-label="Edit" class="md-icon-button nopadding nomargin" ng-click="publication.edit = !publication.edit">
+                        <i class="material-icons">{{publication.edit ? 'check_circle' : 'edit'}}</i>
+                    </md-button>
+                </div>
+                <md-input-container class="md-block nomargin" ng-if="publication.edit">
+                    <textarea autofocus ng-model="publication.point" rows="3" aria-label="Edit">{{publication.point}}</textarea>
+                </md-input-container>
+            </div>
+        </div>
+        <h2 id="CPH2">
+            Conference Papers (1991-2017) [{{publications.umd09CP.length + publications.umd03CP.length + publications.umd91CP.length}}]
+        </h2>
+        <div id="CPContainer">
+            <h3 id="CPH31" class="pos-rel">
+                At UMass Dartmouth (2009-2017) [{{publications.umd09CP.length}}]
+                <div class="edit-item" style="padding:8px 0;" ng-if="$root.isAdmin && $root.loggedIn">
+                    <md-button aria-label="Add New" class="md-icon-button nopadding nomargin" ng-if="$root.isAdmin" ng-click="addPoint(publications.umd09CP)">
+                        <i class="material-icons">add_circle</i>
+                    </md-button>
+                </div>
+            </h3>
+            <div ng-model="publications.umd09CP" ui-sortable="sortingOptions" class="grad-thesis" style="min-height:84px;">
+                <div ng-repeat="publication in publications.umd09CP" class="cardNoTitle {{($root.isAdmin && !publication.edit) ? 'drag' : 'unsortable'}} pos-rel item-admin-edit"
+                    ng-class="publication.edit ? 'unsortable' : ''">
+                    <span ng-bind-html="publication.point" ng-if="!publication.edit"></span>
+                    <div class="edit-item" ng-if="$root.isAdmin && $root.loggedIn">
+                        <md-button aria-label="Delete" class="md-icon-button nopadding nomargin" ng-click="deletePoint(publications.umd09CP, $index)">
+                            <i class="material-icons">delete</i>
+                        </md-button>
+                        <md-button aria-label="Edit" class="md-icon-button nopadding nomargin" ng-click="publication.edit = !publication.edit">
+                            <i class="material-icons">{{publication.edit ? 'check_circle' : 'edit'}}</i>
+                        </md-button>
+                    </div>
+                    <md-input-container class="md-block nomargin" ng-if="publication.edit">
+                        <textarea autofocus ng-model="publication.point" rows="3" aria-label="Edit">{{publication.point}}</textarea>
+                    </md-input-container>
+                </div>
+            </div>
+            <h3 id="CPH32" class="pos-rel">
+                At UMass Dartmouth (2003-2009) [{{publications.umd03CP.length}}]
+                <div class="edit-item" style="padding:8px 0;" ng-if="$root.isAdmin && $root.loggedIn">
+                    <md-button aria-label="Add New" class="md-icon-button nopadding nomargin" ng-if="$root.isAdmin" ng-click="addPoint(publications.umd03CP)">
+                        <i class="material-icons">add_circle</i>
+                    </md-button>
+                </div>
+            </h3>
+            <div ng-model="publications.umd03CP" ui-sortable="sortingOptions" class="grad-thesis" style="min-height:84px;">
+                <div ng-repeat="publication in publications.umd03CP" class="cardNoTitle {{($root.isAdmin && !publication.edit) ? 'drag' : 'unsortable'}} pos-rel item-admin-edit"
+                    ng-class="publication.edit ? 'unsortable' : ''">
+                    <span ng-bind-html="publication.point" ng-if="!publication.edit"></span>
+                    <div class="edit-item" ng-if="$root.isAdmin && $root.loggedIn">
+                        <md-button aria-label="Delete" class="md-icon-button nopadding nomargin" ng-click="deletePoint(publications.umd03CP, $index)">
+                            <i class="material-icons">delete</i>
+                        </md-button>
+                        <md-button aria-label="Edit" class="md-icon-button nopadding nomargin" ng-click="publication.edit = !publication.edit">
+                            <i class="material-icons">{{publication.edit ? 'check_circle' : 'edit'}}</i>
+                        </md-button>
+                    </div>
+                    <md-input-container class="md-block nomargin" ng-if="publication.edit">
+                        <textarea autofocus ng-model="publication.point" rows="3" aria-label="Edit">{{publication.point}}</textarea>
+                    </md-input-container>
+                </div>
+            </div>
+            <h3 id="CPH33" class="pos-rel">
+                Before Joining UMass Dartmouth (1991-2003) [{{publications.umd91CP.length}}]
+                <div class="edit-item" style="padding:8px 0;" ng-if="$root.isAdmin && $root.loggedIn">
+                    <md-button aria-label="Add New" class="md-icon-button nopadding nomargin" ng-if="$root.isAdmin" ng-click="addPoint(publications.umd91CP)">
+                        <i class="material-icons">add_circle</i>
+                    </md-button>
+                </div>
+            </h3>
+            <div ng-model="publications.umd91CP" ui-sortable="sortingOptions" class="grad-thesis" style="min-height:84px;">
+                <div ng-repeat="publication in publications.umd91CP" class="umdCard {{($root.isAdmin && !publication.edit) ? 'drag' : 'unsortable'}} pos-rel item-admin-edit"
+                    ng-class="publication.edit ? 'unsortable' : ''">
+                    <span ng-bind-html="publication.point" ng-if="!publication.edit"></span>
+                    <div class="edit-item" ng-if="$root.isAdmin && $root.loggedIn">
+                        <md-button aria-label="Delete" class="md-icon-button nopadding nomargin" ng-click="deletePoint(publications.umd91CP, $index)">
+                            <i class="material-icons">delete</i>
+                        </md-button>
+                        <md-button aria-label="Edit" class="md-icon-button nopadding nomargin" ng-click="publication.edit = !publication.edit">
+                            <i class="material-icons">{{publication.edit ? 'check_circle' : 'edit'}}</i>
+                        </md-button>
+                    </div>
+                    <md-input-container class="md-block nomargin" ng-if="publication.edit">
+                        <textarea autofocus ng-model="publication.point" rows="3" aria-label="Edit">{{publication.point}}</textarea>
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+        <h2 id="RP1" class="pos-rel">
+            Research Posters
+            <div class="edit-item" style="padding:8px 0;" ng-if="$root.isAdmin && $root.loggedIn">
+                <md-button aria-label="Add New" class="md-icon-button nopadding nomargin" ng-if="$root.isAdmin" ng-click="addPoint(publications.researchPosters)">
+                    <i class="material-icons">add_circle</i>
+                </md-button>
+            </div>
+        </h2>
+        <div class="paddingTop" id="TRContainer">
+            <div ng-model="publications.researchPosters" ui-sortable="sortingOptions" class="grad-thesis" style="min-height:84px;">
+                <div ng-repeat="publication in publications.researchPosters" class="cardNoTitle {{($root.isAdmin && !publication.edit) ? 'drag' : 'unsortable'}} pos-rel item-admin-edit"
+                    ng-class="publication.edit ? 'unsortable' : ''">
+                    <span ng-bind-html="publication.point" ng-if="!publication.edit"></span>
+                    <div class="edit-item" ng-if="$root.isAdmin && $root.loggedIn">
+                        <md-button aria-label="Delete" class="md-icon-button nopadding nomargin" ng-click="deletePoint(publications.researchPosters, $index)">
+                            <i class="material-icons">delete</i>
+                        </md-button>
+                        <md-button aria-label="Edit" class="md-icon-button nopadding nomargin" ng-click="publication.edit = !publication.edit">
+                            <i class="material-icons">{{publication.edit ? 'check_circle' : 'edit'}}</i>
+                        </md-button>
+                    </div>
+                    <md-input-container class="md-block nomargin" ng-if="publication.edit">
+                        <textarea autofocus ng-model="publication.point" rows="3" aria-label="Edit">{{publication.point}}</textarea>
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+        <h2 id="TRh2" class="pos-rel">
+            Technical Reports (1999-2008)
+            <div class="edit-item" style="padding:8px 0;" ng-if="$root.isAdmin && $root.loggedIn">
+                <md-button aria-label="Add New" class="md-icon-button nopadding nomargin" ng-if="$root.isAdmin" ng-click="addPoint(publications.techReports)">
+                    <i class="material-icons">add_circle</i>
+                </md-button>
+            </div>
+        </h2>
+        <div class="paddingTop" id="TRContainer">
+            <div ng-model="publications.techReports" ui-sortable="sortingOptions" class="grad-thesis" style="min-height:84px;">
+                <div ng-repeat="publication in publications.techReports" class="cardNoTitle {{($root.isAdmin && !publication.edit) ? 'drag' : 'unsortable'}} pos-rel item-admin-edit"
+                    ng-class="publication.edit ? 'unsortable' : ''">
+                    <span ng-bind-html="publication.point" ng-if="!publication.edit"></span>
+                    <div class="edit-item" ng-if="$root.isAdmin && $root.loggedIn">
+                        <md-button aria-label="Delete" class="md-icon-button nopadding nomargin" ng-click="deletePoint(publications.techReports, $index)">
+                            <i class="material-icons">delete</i>
+                        </md-button>
+                        <md-button aria-label="Edit" class="md-icon-button nopadding nomargin" ng-click="publication.edit = !publication.edit">
+                            <i class="material-icons">{{publication.edit ? 'check_circle' : 'edit'}}</i>
+                        </md-button>
+                    </div>
+                    <md-input-container class="md-block nomargin" ng-if="publication.edit">
+                        <textarea autofocus ng-model="publication.point" rows="3" aria-label="Edit">{{publication.point}}</textarea>
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+        <h2 id="TPh2" class="pos-rel">
+            Thesis and Project
+            <div class="edit-item" style="padding:8px 0;" ng-if="$root.isAdmin && $root.loggedIn">
+                <md-button aria-label="Add New" class="md-icon-button nopadding nomargin" ng-if="$root.isAdmin" ng-click="addPoint(publications.thesisProject)">
+                    <i class="material-icons">add_circle</i>
+                </md-button>
+            </div>
+        </h2>
+        <div class="paddingTop" id="TPContainer">
+            <div ng-model="publications.thesisProject" ui-sortable="sortingOptions" class="grad-thesis" style="min-height:84px;">
+                <div ng-repeat="publication in publications.thesisProject" class="cardNoTitle {{($root.isAdmin && !publication.edit) ? 'drag' : 'unsortable'}} pos-rel item-admin-edit"
+                    ng-class="publication.edit ? 'unsortable' : ''">
+                    <span ng-bind-html="publication.point" ng-if="!publication.edit"></span>
+                    <div class="edit-item" ng-if="$root.isAdmin && $root.loggedIn">
+                        <md-button aria-label="Delete" class="md-icon-button nopadding nomargin" ng-click="deletePoint(publications.thesisProject, $index)">
+                            <i class="material-icons">delete</i>
+                        </md-button>
+                        <md-button aria-label="Edit" class="md-icon-button nopadding nomargin" ng-click="publication.edit = !publication.edit">
+                            <i class="material-icons">{{publication.edit ? 'check_circle' : 'edit'}}</i>
+                        </md-button>
+                    </div>
+                    <md-input-container class="md-block nomargin" ng-if="publication.edit">
+                        <textarea autofocus ng-model="publication.point" rows="3" aria-label="Edit">{{publication.point}}</textarea>
+                    </md-input-container>
+                </div>
+            </div>
+        </div>
+        <hr> Note: Links to papers are provided to ensure timely dissemination of scholarly and technical work. Copyright and
+        all rights therein are retained by authors or by other copyright holders. All persons accessing this information
+        are expected to adhere to the terms and constraints invoked by each author's copyright. In most cases, these works
+        may not be reposted without the explicit permission of the copyright holder.
+        <hr>
+        <br> © 2002-2016 IEEE. Personal use of this material is permitted. However, permission to reprint/republish this material
+        for advertising or promotional purposes or for creating new collective works for resale or redistribution to servers
+        or lists, or to reuse any copyrighted component of this work in other works must be obtained from the IEEE.
+        <br>
+        <br>
+    </div>
+</div>

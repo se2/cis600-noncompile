@@ -1,0 +1,15 @@
+[
+    {
+        "id": "000",
+        "username": "admin",
+        "hashed": "$1$JZXDKsj8$mWDmDX5GRSKf4h0VVh5EW1",
+        "role": "admin",
+        "email": "hxu@umassd.edu"
+    },
+    {
+        "id": "001",
+        "username": "user",
+        "hashed": "$1$rKeMdE2N$bHhxMe0DWXw.RQyR6VBpK0",
+        "role": "common"
+    }
+]

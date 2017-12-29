@@ -1,0 +1,539 @@
+<div id="accountContainer">
+  <div class="xuInfoCard" ng-if="$root.loggedIn && isEdit" style="margin-right:30px;">
+    <div class="xuImg profile-page">
+      <div class="profile-img" ngf-thumbnail="formdata.file || formdata.avatar" ngf-as-background="true"></div>
+    </div>
+    <div class="name">{{formdata.prefix && formdata.prefix != 'NONE' ? formdata.prefix + ' ' : ''}}{{formdata.fullname}}</div>
+    <div class="dept">
+      <form name="forms.avatarForm" id="avatarForm">
+        <label>Upload avatar (max: 5MB, square)</label>
+        <md-button class="md-primary md-no-ink" ngf-select ng-model="formdata.file" name="file" ngf-pattern="'image/*'" ngf-accept="'image/*'"
+          ngf-max-size="5MB" ngf-multiple="false">Browse</md-button>
+        <div ng-if="msg.uploadProgress">
+          <md-progress-linear ng-if="msg.uploadProgress < 100" md-mode="determinate" value="{{msg.uploadProgress}}"></md-progress-linear>
+          <i ng-if="!msg.uploadFail && msg.uploadProgress == 100" class="success-msg">Avatar Updated</i>
+        </div>
+        <div>
+          <i ng-if="msg.uploadFail" class="error-msg">{{msg.uploadFail}}</i>
+          <i ng-show="forms.avatarForm.file.$error.maxSize">File too large max 5MB</i>
+        </div>
+        <md-button class="md-raised md-primary" ng-click="changeAvatar()">Update Avatar</md-button>
+      </form>
+    </div>
+    <div class="univ" ng-if="$root.loggedIn && formdata.school">
+      <h4>University:</h4>
+      <p ng-bind="formdata.school"></p>
+    </div>
+  </div>
+  <!-- Login section -->
+  <div id="researchScope" ng-if="!$root.loggedIn" flex="50" flex-xs="100" layout="column" class="login-panel">
+    <form ng-submit="submit()" role="form" class="csel-form" id="loginForm" name="forms.loginForm" ng-if="!$root.loggedIn">
+      <h1>Login</h1>
+      <md-input-container class="md-block">
+        <label>Username</label>
+        <input ng-model="credentials.username" required type="text" autofocus>
+      </md-input-container>
+      <md-input-container class="md-block">
+        <label>Password</label>
+        <input ng-model="credentials.password" required type="password">
+      </md-input-container>
+      <md-button class="md-raised md-primary" type="submit" ng-disabled="forms.loginForm.$invalid">Login</md-button>
+      <md-button class="md-warn" ng-if="msg.error">{{msg.error}}</md-button>
+    </form>
+  </div>
+  <div id="researchScope" ng-if="$root.loggedIn" class="pos-rel" style="margin:0 auto 50px;">
+    <md-progress-linear class="loading" ng-show="loading" md-mode="indeterminate"></md-progress-linear>
+    <!-- Listing section -->
+    <div ng-cloak ng-if="$root.loggedIn && !isEdit">
+      <md-content>
+        <md-tabs md-dynamic-height md-border-bottom>
+          <md-tab label="{{$root.isAdmin ? 'Users List' : 'Search'}}" md-on-select="resetMsg()">
+            <md-content class="md-padding form-wrapper">
+              <form ng-submit="searchUser()" role="form" class="csel-form" id="searchForm" name="forms.searchForm">
+                <div layout="row" layout-xs="column">
+                  <md-input-container flex="66" flex-xs="0"></md-input-container>
+                  <md-input-container flex="33" flex-xs="100" style="margin-bottom:0;">
+                    <label>Search by name or email</label>
+                    <input type="text" name="search" id="search" ng-model="formdata.searchInput" required>
+                  </md-input-container>
+                </div>
+              </form>
+              <div class="search-not-found" ng-if="msg.searchNotFound">{{msg.searchNotFound}}</div>
+              <h2 ng-if="users.graduate.length > 0">Graduate Students</h2>
+              <md-list layout="row" layout-wrap layout-xs="column">
+                <md-list-item flex="50" flex-xs="100" ng-repeat="user in users.graduate | toArray:false | filter: formdata.searchInput | orderBy:['-year', 'lastname']"
+                  ng-click="editUser(user.id, users.graduate)">
+                  <div class="md-avatar bg-cover" style="background-image:url('{{user.avatar ? user.avatar : defaultAvatar}}')"></div>
+                  <div class="md-list-item-text">
+                    <h3>{{user.fullname}}</h3>
+                    <p>{{user.email}}</p>
+                  </div>
+                  <md-button title="Delete this user" aria-label="Delete" class="md-icon-button nopadding nomargin delete-user" ng-click="deleteUser(user.id, 'graduate')"
+                    ng-if="$root.isAdmin && $root.loggedIn">
+                    <i class="material-icons">delete</i>
+                  </md-button>
+                </md-list-item>
+              </md-list>
+              <div class="md-block" ng-if="users.scholar.length > 0">
+                <br>
+                <br>
+                <h2>Visiting Scholar</h2>
+                <md-list layout="row" layout-wrap layout-xs="column">
+                  <md-list-item flex="50" flex-xs="100" ng-repeat="user in users.scholar | toArray:false | filter: formdata.searchInput | orderBy:['-year', 'lastname']"
+                    ng-click="editUser(user.id, users.scholar)">
+                    <div class="md-avatar bg-cover" style="background-image:url('{{user.avatar ? user.avatar : defaultAvatar}}')"></div>
+                    <div class="md-list-item-text">
+                      <h3>{{user.prefix ? user.prefix + ' ' : ''}}{{user.fullname}}</h3>
+                      <p>{{user.email}}</p>
+                    </div>
+                    <md-button title="Delete this user" aria-label="Delete" class="md-icon-button nopadding nomargin delete-user" ng-click="deleteUser(user.id, 'scholar')"
+                      ng-if="$root.isAdmin && $root.loggedIn">
+                      <i class="material-icons">delete</i>
+                    </md-button>
+                  </md-list-item>
+                </md-list>
+                <br>
+                <br>
+              </div>
+              <h2 ng-if="users.alumni.length > 0">Alumni</h2>
+              <md-list layout="row" layout-wrap layout-xs="column">
+                <md-list-item flex="50" flex-xs="100" ng-repeat="user in users.alumni | toArray:false | filter: formdata.searchInput | orderBy:['-year', 'lastname']"
+                  ng-click="editUser(user.id, users.alumni)">
+                  <div class="md-avatar bg-cover" style="background-image:url('{{user.avatar ? user.avatar : defaultAvatar}}')"></div>
+                  <div class="md-list-item-text">
+                    <h3>{{user.prefix ? user.prefix + ' ' : ''}}{{user.fullname}}</h3>
+                    <p>{{user.email}}</p>
+                  </div>
+                  <md-button title="Delete this user" aria-label="Delete" class="md-icon-button nopadding nomargin delete-user" ng-click="deleteUser(user.id, 'alumni')"
+                    ng-if="$root.isAdmin && $root.loggedIn">
+                    <i class="material-icons">delete</i>
+                  </md-button>
+                </md-list-item>
+              </md-list>
+            </md-content>
+          </md-tab>
+          <md-tab label="Register" md-on-select="resetMsg()">
+            <md-content class="md-padding form-wrapper">
+              <form role="form" class="csel-form" id="registerForm" name="forms.registerForm">
+                <div layout="row" layout-xs="column">
+                  <md-input-container flex="10" flex-xs="33">
+                    <label>Title</label>
+                    <md-select name="type" ng-model="formdata.prefix">
+                      <md-option ng-repeat="prefix in prefixes" value="{{prefix}}">{{prefix}}</md-option>
+                    </md-select>
+                  </md-input-container>
+                  <md-input-container flex="35" flex-xs="66">
+                    <label>First Name</label>
+                    <input ng-model="formdata.firstname" required type="text" name="firstname">
+                    <div ng-messages="registerForm.firstname.$error">
+                      <div ng-message="required">First name is required.</div>
+                    </div>
+                  </md-input-container>
+                  <md-input-container flex="20" flex-xs="100">
+                    <label>Middle Name</label>
+                    <input ng-model="formdata.middlename" type="text" name="middlename" maxlength="1">
+                  </md-input-container>
+                  <md-input-container flex="35" flex-xs="100">
+                    <label>Last Name</label>
+                    <input ng-model="formdata.lastname" required type="text" name="lastname">
+                    <div ng-messages="registerForm.lastname.$error">
+                      <div ng-message="required">Last name is required.</div>
+                    </div>
+                  </md-input-container>
+                </div>
+                <div layout="row" layout-xs="column">
+                  <md-input-container flex="{{formdata.type == 'alumni' || formdata.type == 'graduate-ms' || formdata.type == 'graduate-phd' ? 25 : 50}}"
+                    flex-xs="100">
+                    <label>Student Type</label>
+                    <md-select name="type" ng-model="formdata.type" required>
+                      <md-option value="graduate-ms">Graduate (M.S.)</md-option>
+                      <md-option value="graduate-phd">Graduate (Ph.D.)</md-option>
+                      <md-option value="alumni">Alumni</md-option>
+                      <md-option value="scholar">Visiting Scholar</md-option>
+                    </md-select>
+                  </md-input-container>
+                  <md-input-container flex="25" flex-xs="100" ng-if="formdata.type == 'alumni' || formdata.type == 'graduate-ms' || formdata.type == 'graduate-phd'">
+                    <label>Graduation Year
+                      <span ng-if="formdata.type == 'graduate-ms' || formdata.type == 'graduate-phd'"> (expectation)</span>
+                    </label>
+                    <md-select name="type" ng-model="formdata.year" required>
+                      <md-option ng-repeat="year in range(2003) | orderBy:'-toString()'" value="{{year}}">{{year}}</md-option>
+                    </md-select>
+                  </md-input-container>
+                  <md-input-container flex="100" flex-xs="100">
+                    <label>School</label>
+                    <input ng-model="formdata.school" required type="text" name="school">
+                  </md-input-container>
+                </div>
+                <div layout="row" layout-xs="column" ng-if="formdata.type == 'scholar'">
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>Start Date</label>
+                    <md-datepicker ng-model="formdata.startDate" md-date-locale="dateFields.locale" md-current-view="year" md-open-on-focus="true"></md-datepicker>
+                  </md-input-container>
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>End Date</label>
+                    <md-datepicker ng-model="formdata.endDate" md-date-locale="dateFields.locale" md-current-view="year" md-open-on-focus="true"></md-datepicker>
+                  </md-input-container>
+                </div>
+                <div layout="row" layout-xs="column">
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>Primary Email</label>
+                    <input ng-model="formdata.email" required type="email">
+                  </md-input-container>
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>Secondary Email</label>
+                    <input ng-model="formdata.email2" type="email">
+                  </md-input-container>
+                </div>
+                <div layout="row" layout-xs="column">
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>Facebook Profile</label>
+                    <input type="text" ng-model="formdata.facebook" name="facebook" ng-pattern="/(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,})/">
+                    <div ng-messages="registerForm.facebook.$error">
+                      <div ng-message-exp="['pattern']">Invalid URL.</div>
+                    </div>
+                  </md-input-container>
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>LinkedIn Profile</label>
+                    <input type="text" ng-model="formdata.linkedin" name="linkedin" ng-pattern="/(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,})/">
+                    <div ng-messages="registerForm.linkedin.$error">
+                      <div ng-message-exp="['pattern']">Invalid URL.</div>
+                    </div>
+                  </md-input-container>
+                </div>
+                <div layout="row" layout-xs="column" ng-if="formdata.type != 'graduate-ms' && formdata.type != 'graduate-phd'">
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>Current Employer</label>
+                    <input ng-model="formdata.employer" type="text">
+                  </md-input-container>
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>Current Position</label>
+                    <input ng-model="formdata.position" type="text">
+                  </md-input-container>
+                </div>
+                <div layout="column" layout-xs="column">
+                  <md-input-container flex="100">
+                    <label>Biography</label>
+                  </md-input-container>
+                  <md-input-container flex="100">
+                    <textarea ui-tinymce="tinymceOptionsBio" aria-label="Biography" ng-model="formdata.bio"></textarea>
+                    <br>
+                  </md-input-container>
+                </div>
+                <md-button class="md-raised md-primary" ng-click="register()" ng-disabled="forms.registerForm.$invalid">Register</md-button>
+                <md-button class="md-primary" md-no-ink ng-if="msg.successRegister">{{msg.successRegister}}</md-button>
+                <md-button class="md-warn" md-no-ink ng-if="msg.errorRegister">{{msg.errorRegister}}</md-button>
+              </form>
+            </md-content>
+          </md-tab>
+          <md-tab label="Security" md-on-select="resetMsg()" ng-if="$root.isAdmin">
+            <md-content class="md-padding form-wrapper">
+              <div layout="row" layout-xs="column">
+                <div flex="50" flex-xs="100">
+                  <md-card>
+                    <md-card-title>
+                      <md-card-title-text>
+                        <span class="md-headline">Admin Account</span>
+                      </md-card-title-text>
+                    </md-card-title>
+                    <md-card-content>
+                      <form role="form" class="csel-form" id="updatePasswordForm" name="forms.updatePasswordForm" ng-submit="updatePassword(credentials)">
+                        <input type="hidden" ng-model="credentials.id">
+                        <md-input-container class="md-block">
+                          <label>Admin Username</label>
+                          <input type="text" ng-model="credentials.username" required>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                          <label>Current Admin Password</label>
+                          <input type="password" ng-model="credentials.currentPassword" required>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                          <label>New Admin Password</label>
+                          <input type="password" ng-model="credentials.newPassword" required>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                          <label>Confirm Admin Password</label>
+                          <input type="password" ng-model="credentials.confirmPassword" required>
+                        </md-input-container>
+                        <md-button class="md-warn" md-no-ink ng-if="msg.errorUpdatePass">{{msg.errorUpdatePass}}</md-button>
+                        <md-button class="md-primary" md-no-ink ng-if="msg.successUpdatePass">{{msg.successUpdatePass}}</md-button>
+                        <md-button class="md-raised md-primary float-right" type="submit">Update</md-button>
+                      </form>
+                    </md-card-content>
+                  </md-card>
+                </div>
+                <div flex="50" flex-xs="100">
+                  <md-card>
+                    <md-card-title>
+                      <md-card-title-text>
+                        <span class="md-headline">Common Account</span>
+                      </md-card-title-text>
+                    </md-card-title>
+                    <md-card-content>
+                      <form role="form" class="csel-form" id="updateCommonPasswordForm" name="forms.updateCommonPasswordForm" ng-submit="updateCommonPassword(common)">
+                        <input type="hidden" ng-model="common.id">
+                        <md-input-container class="md-block">
+                          <label>Common Username</label>
+                          <input type="text" ng-model="common.username" required>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                          <label>Current Common Password</label>
+                          <input type="password" ng-model="common.currentPassword" required>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                          <label>New Common Password</label>
+                          <input type="password" ng-model="common.newPassword" required>
+                        </md-input-container>
+                        <md-input-container class="md-block">
+                          <label>Confirm Common Password</label>
+                          <input type="password" ng-model="common.confirmPassword" required>
+                        </md-input-container>
+                        <md-button class="md-warn" md-no-ink ng-if="msg.errorUpdateCommonPass">{{msg.errorUpdateCommonPass}}</md-button>
+                        <md-button class="md-primary" md-no-ink ng-if="msg.successUpdateCommonPass">{{msg.successUpdateCommonPass}}</md-button>
+                        <md-button class="md-raised md-primary float-right" type="submit">Update</md-button>
+                      </form>
+                    </md-card-content>
+                  </md-card>
+                </div>
+              </div>
+            </md-content>
+          </md-tab>
+          <md-tab label="Emails" md-on-select="resetMsg()" ng-if="$root.isAdmin">
+            <md-content class="md-padding form-wrapper">
+              <div class="md-block">
+                <md-card>
+                  <md-card-title>
+                    <span class="md-headline">Email List</span>
+                  </md-card-title>
+                  <md-card-content>
+                    <div layout="row" layout-wrap flex>
+                      <div flex-xs flex="100">
+                        <md-checkbox aria-label="Select All" ng-checked="isChecked()" ng-click="toggleAll()" md-indeterminate="isIndeterminate()">
+                          <b>
+                            <span ng-if="isChecked()">Un-</span>Select All
+                          </b>
+                        </md-checkbox>
+                      </div>
+                    </div>
+                    <div layout="row" layout-wrap flex class="sub-checkboxes">
+                      <div flex-xs flex="100">
+                        <md-checkbox aria-label="Select All Graduate Students" ng-checked="isCheckedSub(users.graduate)" ng-click="toggleAllSub(users.graduate)">
+                          <b>Graduate Students</b>
+                        </md-checkbox>
+                      </div>
+                      <div class="select-all-checkboxes" flex="33" flex-sm="50" flex-xs="100" ng-repeat="user in users.graduate | toArray:false | orderBy:['-year', 'lastname']">
+                        <md-checkbox ng-checked="exists(user, selected)" ng-click="toggle(user, selected)">
+                          {{user.prefix ? user.prefix + ' ' : ''}}{{user.fullname}}
+                        </md-checkbox>
+                      </div>
+                    </div>
+                    <div layout="row" layout-wrap flex class="sub-checkboxes">
+                      <div flex-xs flex="100">
+                        <md-checkbox aria-label="Select All Visiting Scholar" ng-checked="isCheckedSub(users.scholar)" ng-click="toggleAllSub(users.scholar)">
+                          <b>Visiting Scholar</b>
+                        </md-checkbox>
+                      </div>
+                      <div class="select-all-checkboxes" flex="33" flex-sm="50" flex-xs="100" ng-repeat="user in users.scholar | toArray:false | orderBy:['-year', 'lastname']">
+                        <md-checkbox ng-checked="exists(user, selected)" ng-click="toggle(user, selected)">
+                          {{user.prefix ? user.prefix + ' ' : ''}}{{user.fullname}}
+                        </md-checkbox>
+                      </div>
+                    </div>
+                    <div layout="row" layout-wrap flex class="sub-checkboxes">
+                      <div flex-xs flex="100">
+                        <md-checkbox aria-label="Select All Alumni" ng-checked="isCheckedSub(users.alumni)" ng-click="toggleAllSub(users.alumni)">
+                          <b>Alumni</b>
+                        </md-checkbox>
+                      </div>
+                      <div class="select-all-checkboxes" flex="33" flex-sm="50" flex-xs="100" ng-repeat="user in users.alumni | toArray:false | orderBy:['-year', 'lastname']">
+                        <md-checkbox ng-checked="exists(user, selected)" ng-click="toggle(user, selected)">
+                          {{user.prefix ? user.prefix + ' ' : ''}}{{user.fullname}}
+                        </md-checkbox>
+                      </div>
+                    </div>
+                  </md-card-content>
+                </md-card>
+              </div>
+              <div class="md-block" style="padding:20px 8px 0;">
+                <span class="md-headline" style="display:block;padding-bottom:16px;">Email Content</span>
+                <form role="form" class="csel-form" id="emailForm" name="forms.emailForm">
+                  <md-input-container class="md-block">
+                    <label>Sender Email</label>
+                    <input type="email" ng-model="email.receivingEmail" required>
+                  </md-input-container>
+                  <md-input-container class="md-block">
+                    <label>CC Email</label>
+                    <input type="email" ng-model="email.cc">
+                  </md-input-container>
+                  <md-input-container class="md-block">
+                    <label>Sender Name</label>
+                    <input type="text" ng-model="email.from" required>
+                  </md-input-container>
+                  <md-input-container class="md-block">
+                    <label>Email Subject</label>
+                    <input type="text" ng-model="email.subject" required>
+                  </md-input-container>
+                  <span class="md-subhead">Email Message</span>
+                  <md-input-container class="md-block">
+                    <textarea ui-tinymce="tinymceOptions" aria-label="Email Message" ng-model="email.body" required></textarea>
+                  </md-input-container>
+                  <md-input-container class="md-block">
+                    <label>Testing Email</label>
+                    <input type="email" ng-model="email.test">
+                  </md-input-container>
+                  <md-button class="md-primary" ng-if="msg.successSentEmail">{{msg.successSentEmail}}</md-button>
+                  <md-button class="md-warn" ng-if="msg.errorNoEmail">{{msg.errorNoEmail}}</md-button>
+                  <md-button class="md-raised md-primary float-right" ng-click="sendEmailForm(email)">Send Email</md-button>
+                  <md-button class="md-raised md-warn float-right" ng-click="sendTestEmailForm(email)">Send Test Email</md-button>
+                </form>
+              </div>
+            </md-content>
+          </md-tab>
+          <md-tab label="Download Data" md-on-select="resetMsg()" ng-if="$root.isAdmin">
+            <md-content class="md-padding form-wrapper" style="text-align:center;">
+              <md-button class="md-raised md-primary" ng-click="download()">Download Data</md-button>
+            </md-content>
+          </md-tab>
+          <md-tab label="Help" md-on-select="resetMsg()" ng-if="!$root.isAdmin">
+            <md-content class="md-padding form-wrapper">
+              <p>
+                Please search your profile by your first name, last name, full name, or your email address.
+                <br> If you cannot find your user, please register your account by select REGISTER tab.
+              </p>
+            </md-content>
+          </md-tab>
+        </md-tabs>
+      </md-content>
+    </div>
+    <!-- Edit User Section -->
+    <div ng-cloak ng-if="$root.loggedIn && isEdit">
+      <md-content>
+        <md-tabs md-dynamic-height md-border-bottom>
+          <md-tab label="General" md-on-select="resetMsg()">
+            <md-content class="md-padding nopadding__side">
+              <form role="form" class="csel-form" id="infoForm" name="infoForm">
+                <div layout="row" layout-xs="column">
+                  <md-input-container flex="15" flex-xs="33">
+                    <label>Title</label>
+                    <md-select name="type" ng-model="formdata.prefix">
+                      <md-option ng-repeat="prefix in prefixes" value="{{prefix}}">{{prefix}}</md-option>
+                    </md-select>
+                  </md-input-container>
+                  <md-input-container flex="30" flex-xs="100">
+                    <label>First Name</label>
+                    <input ng-model="formdata.firstname" required type="text" name="firstname">
+                    <div ng-messages="infoForm.firstname.$error">
+                      <div ng-message="required">First name is required.</div>
+                    </div>
+                  </md-input-container>
+                  <md-input-container flex="20" flex-xs="100">
+                    <label>Middle Name</label>
+                    <input ng-model="formdata.middlename" type="text" name="middlename" maxlength="1">
+                  </md-input-container>
+                  <md-input-container flex="35" flex-xs="100">
+                    <label>Last Name</label>
+                    <input ng-model="formdata.lastname" required type="text" name="lastname">
+                    <div ng-messages="infoForm.lastname.$error">
+                      <div ng-message="required">Last name is required.</div>
+                    </div>
+                  </md-input-container>
+                </div>
+                <div layout="row" layout-xs="column">
+                  <md-input-container flex="{{formdata.type == 'alumni' || formdata.type == 'graduate-ms' || formdata.type == 'graduate-phd' ? 25 : 50}}"
+                    flex-xs="100">
+                    <label>Student Type</label>
+                    <md-select name="type" ng-model="formdata.type" required>
+                      <md-option value="graduate-ms">Graduate (M.S.)</md-option>
+                      <md-option value="graduate-phd">Graduate (Ph.D.)</md-option>
+                      <md-option value="alumni">Alumni</md-option>
+                      <md-option value="scholar">Visiting Scholar</md-option>
+                    </md-select>
+                  </md-input-container>
+                  <md-input-container flex="25" flex-xs="100" ng-if="formdata.type == 'alumni' || formdata.type == 'graduate-ms' || formdata.type == 'graduate-phd'">
+                    <label>Graduation Year</label>
+                    <md-select name="type" ng-model="formdata.year" required>
+                      <md-option ng-repeat="year in range(2003) | orderBy:'-toString()'" value="{{year}}">{{year}}</md-option>
+                    </md-select>
+                  </md-input-container>
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>School</label>
+                    <input ng-model="formdata.school" required type="text" name="school">
+                  </md-input-container>
+                </div>
+                <div layout="row" layout-xs="column" ng-if="formdata.type == 'scholar'">
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>Start Date</label>
+                    <md-datepicker ng-model="formdata.startDate" md-date-locale="dateFields.locale" md-current-view="year" md-open-on-focus="true"></md-datepicker>
+                  </md-input-container>
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>End Date</label>
+                    <md-datepicker ng-model="formdata.endDate" md-date-locale="dateFields.locale" md-current-view="year" md-open-on-focus="true"></md-datepicker>
+                  </md-input-container>
+                </div>
+                <div layout="row" layout-xs="column">
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>Primary Email</label>
+                    <input ng-model="formdata.email" required type="email">
+                  </md-input-container>
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>Secondary Email</label>
+                    <input ng-model="formdata.email2" type="email">
+                  </md-input-container>
+                </div>
+                <div layout="row" layout-xs="column" ng-if="formdata.type != 'graduate-ms' && formdata.type != 'graduate-phd'">
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>Current Employer</label>
+                    <input ng-model="formdata.employer" type="text">
+                  </md-input-container>
+                  <md-input-container flex="50" flex-xs="100">
+                    <label>Current Position</label>
+                    <input ng-model="formdata.position" type="text">
+                  </md-input-container>
+                </div>
+                <md-input-container class="md-block">
+                  <label>Biography</label>
+                  <br>
+                </md-input-container>
+                <md-input-container class="md-block">
+                  <textarea ui-tinymce="tinymceOptionsBio" aria-label="Biography" ng-model="formdata.bio"></textarea>
+                </md-input-container>
+                <md-button class="md-raised" ng-click="backToList()">Back</md-button>
+                <md-button class="md-primary" md-no-ink ng-if="msg.successUpdate">{{msg.successUpdate}}</md-button>
+                <md-button class="md-raised md-primary float-right" ng-click="studentSubmit()">Update</md-button>
+              </form>
+            </md-content>
+          </md-tab>
+          <md-tab label="Socials" md-on-select="resetMsg()">
+            <md-content class="md-padding">
+              <form role="form" class="csel-form" name="forms.socialForm" ng-submit="socialSubmit()" ng-if="$root.loggedIn">
+                <md-input-container class="md-block">
+                  <label>Personal Homepage</label>
+                  <input type="text" ng-model="formdata.homepage" name="homepage" ng-pattern="/(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,})/">
+                  <div ng-messages="socialForm.homepage.$error">
+                    <div ng-message-exp="['pattern']">Invalid URL.</div>
+                  </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                  <label>Facebook Profile</label>
+                  <input type="text" ng-model="formdata.facebook" name="facebook" ng-pattern="/(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,})/">
+                  <div ng-messages="socialForm.facebook.$error">
+                    <div ng-message-exp="['pattern']">Invalid URL.</div>
+                  </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                  <label>LinkedIn Profile</label>
+                  <input type="text" ng-model="formdata.linkedin" name="linkedin" ng-pattern="/(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,})/">
+                  <div ng-messages="socialForm.linkedin.$error">
+                    <div ng-message-exp="['pattern']">Invalid URL.</div>
+                  </div>
+                </md-input-container>
+                <md-button class="md-primary" md-no-ink ng-if="msg.successSocial">{{msg.successSocial}}</md-button>
+                <md-button class="md-raised md-primary float-right" type="submit">Update</md-button>
+              </form>
+            </md-content>
+          </md-tab>
+        </md-tabs>
+      </md-content>
+    </div>
+  </div>
+</div>
