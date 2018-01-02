@@ -23,7 +23,7 @@
           <md-card md-theme="'default'" md-theme-watch flex="100">
             <md-card-title>
               <md-card-title-text>
-                <span class="md-headline">{{person.fullname}}</span>
+                <span class="md-headline">{{person.firstname}} {{person.lastname}}</span>
                 <span class="md-subhead" ng-if="person.type == 'graduate-ms'">Master's Student</span>
                 <span class="md-subhead" ng-if="person.type == 'graduate-phd'">Ph.D. Student</span>
                 <span class="md-subhead" ng-if="person.year">Expected Graduation: {{person.year}}</span>
@@ -68,7 +68,7 @@
           <md-card md-theme="'default'" md-theme-watch flex="100">
             <md-card-title>
               <md-card-title-text>
-                <span class="md-headline">{{person.prefix ? person.prefix + ' ' : ''}}{{person.fullname}}</span>
+                <span class="md-headline">{{person.prefix ? person.prefix + ' ' : ''}}{{person.firstname}} {{person.lastname}}</span>
                 <span class="md-subhead" ng-if="person.position && person.employer">{{person.position}} at {{person.employer}}</span>
               </md-card-title-text>
               <md-card-title-media>
@@ -110,7 +110,7 @@
           <md-card md-theme="'default'" md-theme-watch flex="100">
             <md-card-title>
               <md-card-title-text>
-                <span class="md-headline">{{person.prefix ? person.prefix + ' ' : ''}}{{person.fullname}}</span>
+                <span class="md-headline">{{person.prefix ? person.prefix + ' ' : ''}}{{person.firstname}} {{person.lastname}}</span>
                 <span class="md-subhead" ng-if="person.year">Graduation: {{person.year}}</span>
                 <span class="md-subhead" ng-if="person.position && person.employer">{{person.position}} at {{person.employer}}</span>
               </md-card-title-text>

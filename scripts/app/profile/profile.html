@@ -165,14 +165,50 @@
                     <input ng-model="formdata.school" required type="text" name="school">
                   </md-input-container>
                 </div>
-                <div layout="row" layout-xs="column" ng-if="formdata.type == 'scholar'">
+                <div layout="row" layout-xs="column" ng-if="formdata.type == 'scholar'" style="margin-top:-18px;">
+                  <div flex="50" flex-xs="100" layout="row" layout-xs="column">
+                    <md-input-container flex="25" flex-xs="100">
+                      <label>Start Date</label>
+                    </md-input-container>
+                    <md-input-container flex="50" flex-xs="100">
+                      <md-select name="type" ng-model="formdata.startMonth">
+                        <md-option value=""></md-option>
+                        <md-option ng-repeat="month in months" value="{{month}}">{{month}}</md-option>
+                      </md-select>
+                    </md-input-container>
+                    <md-input-container flex="25" flex-xs="100">
+                      <md-select name="type" ng-model="formdata.startYear">
+                        <md-option value=""></md-option>
+                        <md-option ng-repeat="year in range(2000, 2040)" value="{{year}}">{{year}}</md-option>
+                      </md-select>
+                    </md-input-container>
+                  </div>
+                  <div flex="50" flex-xs="100" layout="row" layout-xs="column">
+                    <md-input-container flex="25" flex-xs="100">
+                      <label>End Date</label>
+                    </md-input-container>
+                    <md-input-container flex="50" flex-xs="100">
+                      <md-select name="type" ng-model="formdata.endMonth">
+                        <md-option value=""></md-option>
+                        <md-option ng-repeat="month in months" value="{{month}}">{{month}}</md-option>
+                      </md-select>
+                    </md-input-container>
+                    <md-input-container flex="25" flex-xs="100">
+                      <md-select name="type" ng-model="formdata.endYear">
+                        <md-option value=""></md-option>
+                        <md-option ng-repeat="year in range(2000, 2040)" value="{{year}}">{{year}}</md-option>
+                      </md-select>
+                    </md-input-container>
+                  </div>
+                </div>
+                <div layout="row" layout-xs="column" ng-if="formdata.type == 'scholar' || formdata.type == 'alumni'">
                   <md-input-container flex="50" flex-xs="100">
-                    <label>Start Date</label>
-                    <md-datepicker ng-model="formdata.startDate" md-date-locale="dateFields.locale" md-current-view="year" md-open-on-focus="true"></md-datepicker>
+                    <label>State</label>
+                    <input type="text" ng-model="formdata.state" name="state">
                   </md-input-container>
                   <md-input-container flex="50" flex-xs="100">
-                    <label>End Date</label>
-                    <md-datepicker ng-model="formdata.endDate" md-date-locale="dateFields.locale" md-current-view="year" md-open-on-focus="true"></md-datepicker>
+                    <label>Country</label>
+                    <input type="text" ng-model="formdata.country" name="country">
                   </md-input-container>
                 </div>
                 <div layout="row" layout-xs="column">
@@ -460,14 +496,50 @@
                     <input ng-model="formdata.school" required type="text" name="school">
                   </md-input-container>
                 </div>
-                <div layout="row" layout-xs="column" ng-if="formdata.type == 'scholar'">
+                <div layout="row" layout-xs="column" ng-if="formdata.type == 'scholar'" style="margin-top:-18px;">
+                  <div flex="100" flex-xs="100" layout="row" layout-xs="column">
+                    <md-input-container flex="100" flex-xs="100">
+                      <label>Start Date</label>
+                    </md-input-container>
+                    <md-input-container flex="50" flex-xs="100">
+                      <md-select name="type" ng-model="formdata.startMonth">
+                        <md-option value=""></md-option>
+                        <md-option ng-repeat="month in months" value="{{month}}">{{month}}</md-option>
+                      </md-select>
+                    </md-input-container>
+                    <md-input-container flex="50" flex-xs="100">
+                      <md-select name="type" ng-model="formdata.startYear">
+                        <md-option value=""></md-option>
+                        <md-option ng-repeat="year in range(2000, 2040)" value="{{year}}">{{year}}</md-option>
+                      </md-select>
+                    </md-input-container>
+                  </div>
+                  <div flex="100" flex-xs="100" layout="row" layout-xs="column">
+                    <md-input-container flex="100" flex-xs="100">
+                      <label>End Date</label>
+                    </md-input-container>
+                    <md-input-container flex="50" flex-xs="100">
+                      <md-select name="type" ng-model="formdata.endMonth">
+                        <md-option value=""></md-option>
+                        <md-option ng-repeat="month in months" value="{{month}}">{{month}}</md-option>
+                      </md-select>
+                    </md-input-container>
+                    <md-input-container flex="50" flex-xs="100">
+                      <md-select name="type" ng-model="formdata.endYear">
+                        <md-option value=""></md-option>
+                        <md-option ng-repeat="year in range(2000, 2040)" value="{{year}}">{{year}}</md-option>
+                      </md-select>
+                    </md-input-container>
+                  </div>
+                </div>
+                <div layout="row" layout-xs="column" ng-if="formdata.type == 'scholar' || formdata.type == 'alumni'">
                   <md-input-container flex="50" flex-xs="100">
-                    <label>Start Date</label>
-                    <md-datepicker ng-model="formdata.startDate" md-date-locale="dateFields.locale" md-current-view="year" md-open-on-focus="true"></md-datepicker>
+                    <label>State</label>
+                    <input type="text" ng-model="formdata.state" name="state">
                   </md-input-container>
                   <md-input-container flex="50" flex-xs="100">
-                    <label>End Date</label>
-                    <md-datepicker ng-model="formdata.endDate" md-date-locale="dateFields.locale" md-current-view="year" md-open-on-focus="true"></md-datepicker>
+                    <label>Country</label>
+                    <input type="text" ng-model="formdata.country" name="country">
                   </md-input-container>
                 </div>
                 <div layout="row" layout-xs="column">

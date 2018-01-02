@@ -93,6 +93,8 @@ var profileCtrl = function (AppServices, $rootScope, $scope, $http, Upload, $mdD
     };
   }
 
+  // HTML mockup
+  // <md-datepicker ng-model="formdata.startDate" md-date-locale="dateFields.locale" md-current-view="year" md-open-on-focus="true"></md-datepicker>
   $scope.dateFields = {
     type: 'date',
     required: false,
@@ -182,7 +184,12 @@ var profileCtrl = function (AppServices, $rootScope, $scope, $http, Upload, $mdD
 
   $scope.backToList = function () {
     $scope.msg = {};
-    $scope.formdata = $scope.defaultForm;
+    $scope.formdata = {
+      avatar: $scope.defaultAvatar,
+      type: 'graduate-ms',
+      year: "2016",
+      school: 'UMass Dartmouth'
+    };
     $scope.isEdit = false;
     // scroll page to top
     $('html').animate({
@@ -276,11 +283,18 @@ var profileCtrl = function (AppServices, $rootScope, $scope, $http, Upload, $mdD
     if ($scope.formdata.type == 'scholar') {
       $scope.formdata.year = '';
     }
-    if ($scope.formdata.startDate) {
-      $scope.formdata.startDate = moment($scope.formdata.startDate).format('MMMM YYYY');
+    if ($scope.formdata.type == 'graduate-ms' || $scope.formdata.type == 'graduate-phd') {
+      $scope.formdata.state = $scope.formdata.country = '';
     }
-    if ($scope.formdata.endDate) {
-      $scope.formdata.endDate = moment($scope.formdata.endDate).format('MMMM YYYY');
+    if ($scope.formdata.startMonth && $scope.formdata.startYear) {
+      $scope.formdata.startDate = $scope.formdata.startMonth + ' ' + $scope.formdata.startYear;
+    } else {
+      $scope.formdata.startDate = '';
+    }
+    if ($scope.formdata.endMonth && $scope.formdata.endYear) {
+      $scope.formdata.endDate = $scope.formdata.endMonth + ' ' + $scope.formdata.endYear;
+    } else {
+      $scope.formdata.endDate = '';
     }
     AppServices.updateStudent($scope.formdata)
       .then(function (result) {

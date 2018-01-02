@@ -81,25 +81,7 @@
             "id": "8MAUQEqqUM"
         },
         {
-            "avatar": "images\/noimage.png",
-            "type": "graduate-ms",
-            "year": "2016",
-            "school": "UMass Dartmouth",
-            "searchInput": "",
-            "prefix": "Mr.",
-            "firstname": "Nilay",
-            "middlename": "s",
-            "lastname": "Upadhyay",
-            "email": "nilay175@gmail.com",
-            "email2": "nilay175@gmail.com",
-            "linkedin": "https:\/\/linkedin.com\/in\/nilayupadhyay",
-            "facebook": "https:\/\/www.facebook.com\/nilay175",
-            "firstlast": "Nilay Upadhyay",
-            "fullname": "Nilay s. Upadhyay",
-            "id": "qRP525ODel"
-        },
-        {
-            "avatar": "data\/images\/DucTuLuong-2017-12-24-12-12-12.jpg",
+            "avatar": "data\/images\/DucTuLuong-2017-12-29-09-12-21.png",
             "type": "graduate-ms",
             "year": "2018",
             "school": "UMass Dartmouth",
@@ -122,14 +104,35 @@
             "searchInput": "",
             "email": "rdegroof@umassd.edu",
             "email2": "rdegroof445@gmail.com",
-            "prefix": "",
+            "prefix": "Mr.",
             "firstname": "Richard",
             "middlename": "P",
             "lastname": "de Groof",
             "bio": "<p>Received a B.S. from the University of Massachusetts at Dartmouth in 2014. <br \/>Received a M.S. from the University of Massachusetts at Dartmouth in 2016.<\/p>",
             "firstlast": "Richard de Groof",
             "fullname": "Richard P. de Groof",
-            "id": "OtEtVEUDV3"
+            "id": "OtEtVEUDV3",
+            "homepage": "http:\/\/meritpages.com\/Richard-Peter-de-Groof\/1354645",
+            "facebook": null,
+            "linkedin": null
+        },
+        {
+            "avatar": "data\/images\/NilayUpadhyay-2017-12-29-03-12-51.jpg",
+            "type": "graduate-ms",
+            "year": "2016",
+            "school": "UMass Dartmouth",
+            "searchInput": "",
+            "prefix": "Mr.",
+            "firstname": "Nilay",
+            "middlename": "S",
+            "lastname": "Upadhyay",
+            "email": "nilay175@gmail.com",
+            "email2": "nilay175@gmail.com",
+            "linkedin": "https:\/\/linkedin.com\/in\/nilayupadhyay",
+            "facebook": "https:\/\/www.facebook.com\/nilay175",
+            "firstlast": "Nilay Upadhyay",
+            "fullname": "Nilay S. Upadhyay",
+            "id": "qRP525ODel"
         }
     ],
     "alumni": [
@@ -245,21 +248,6 @@
     ],
     "scholar": [
         {
-            "avatar": "images\/noimage.png",
-            "type": "scholar",
-            "year": "",
-            "school": "University of Massachusetts Dartmouth",
-            "prefix": "Dr.",
-            "firstname": "Lexin",
-            "lastname": "Zhou",
-            "email": "sci.lxzhou@gzu.edu.cn",
-            "firstlast": "Lexin Zhou",
-            "fullname": "Lexin Zhou",
-            "id": "2wSOT6AXXv",
-            "employer": "Guizhou University",
-            "position": "Associate Professor"
-        },
-        {
             "avatar": "data\/images\/TianguoJin-2017-12-16-05-12-43.jpg",
             "type": "scholar",
             "year": "",
@@ -280,6 +268,23 @@
             "position": "Associate Professor",
             "startDate": "September 2014",
             "endDate": "September 2015"
+        },
+        {
+            "avatar": "images\/noimage.png",
+            "type": "scholar",
+            "year": "",
+            "school": "University of Massachusetts Dartmouth",
+            "prefix": "Dr.",
+            "firstname": "Lexin",
+            "lastname": "Zhou",
+            "email": "sci.lxzhou@gzu.edu.cn",
+            "firstlast": "Lexin Zhou",
+            "fullname": "Lexin Zhou",
+            "id": "2wSOT6AXXv",
+            "employer": "Guizhou University",
+            "position": "Associate Professor",
+            "startDate": "November 2015",
+            "endDate": "November 2016"
         }
     ]
 }

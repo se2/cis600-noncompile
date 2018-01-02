@@ -18,6 +18,7 @@
             <span class="md-subhead" ng-if="$root.selectedUser.type == 'graduate-phd'">Ph.D. Student</span>
             <span class="md-subhead" ng-if="$root.selectedUser.year && $root.selectedUser.type != 'scholar'">{{$root.selectedUser.type == 'graduate-ms' || $root.selectedUser.type == 'graduate-phd' ? 'Expected ' : ''}}Graduation: {{$root.selectedUser.year}}</span>
             <span class="md-subhead" ng-if="$root.selectedUser.position && $root.selectedUser.employer">{{$root.selectedUser.position}} at {{$root.selectedUser.employer}}</span>
+            <span class="md-subhead" ng-if="$root.selectedUser.state && $root.selectedUser.country">From: {{$root.selectedUser.state}}, {{$root.selectedUser.country}}</span>
           </md-card-title-text>
           <md-card-title-media>
             <div class="md-media-sm card-media" ng-style="{'background-image': 'url({{$root.selectedUser.avatar ? $root.selectedUser.avatar : defaultAvatar}})'}"></div>
