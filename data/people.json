@@ -207,17 +207,16 @@
             "id": "rPmVzA3NdE"
         },
         {
-            "avatar": "images\/noimage.png",
             "type": "alumni",
-            "year": "2017",
+            "avatar": "images\/noimage.png",
+            "firstname": "Yuhan",
+            "lastname": "Zhang",
+            "year": "2015",
             "school": "UMass Dartmouth",
-            "searchInput": "",
-            "firstname": "Jiahuan",
-            "lastname": "Li",
-            "email": "jli5@umassd.edu",
-            "firstlast": "Jiahuan Li",
-            "fullname": "Jiahuan Li",
-            "id": "JFfbs7H3aY"
+            "email": "yzhang5@umassd.edu",
+            "fullname": "Yuhan Zhang",
+            "id": "3QbfGcZAT3",
+            "firstlast": "Yuhan Zhang"
         },
         {
             "avatar": "images\/noimage.png",
@@ -230,20 +229,28 @@
             "fullname": "Ran Wei",
             "id": "Eq1KZvfN6y",
             "firstlast": "Ran Wei",
-            "employer": "Amazon Inc., Beijing, China",
-            "position": "Software Engineer"
+            "employer": "Amazon Inc.",
+            "position": "Software Engineer",
+            "state": "Beijing",
+            "country": "China",
+            "startDate": "",
+            "endDate": ""
         },
         {
-            "type": "alumni",
             "avatar": "images\/noimage.png",
-            "firstname": "Yuhan",
-            "lastname": "Zhang",
-            "year": "2015",
+            "type": "alumni",
+            "year": "2017",
             "school": "UMass Dartmouth",
-            "email": "yzhang5@umassd.edu",
-            "fullname": "Yuhan Zhang",
-            "id": "3QbfGcZAT3",
-            "firstlast": "Yuhan Zhang"
+            "searchInput": "",
+            "firstname": "Jiahuan",
+            "lastname": "Li",
+            "email": "jli5@umassd.edu",
+            "firstlast": "Jiahuan Li",
+            "fullname": "Jiahuan Li",
+            "id": "JFfbs7H3aY",
+            "country": "China",
+            "startDate": "",
+            "endDate": ""
         }
     ],
     "scholar": [
@@ -267,7 +274,13 @@
             "employer": "Harbin Institute of Technology",
             "position": "Associate Professor",
             "startDate": "September 2014",
-            "endDate": "September 2015"
+            "endDate": "September 2015",
+            "state": "Heilongjiang",
+            "country": "China",
+            "startMonth": "September",
+            "startYear": "2014",
+            "endMonth": "September",
+            "endYear": "2015"
         },
         {
             "avatar": "images\/noimage.png",
@@ -284,7 +297,13 @@
             "employer": "Guizhou University",
             "position": "Associate Professor",
             "startDate": "November 2015",
-            "endDate": "November 2016"
+            "endDate": "November 2016",
+            "state": "Guizhou",
+            "country": "China",
+            "startMonth": "November",
+            "startYear": "2015",
+            "endMonth": "November",
+            "endYear": "2016"
         }
     ]
 }
