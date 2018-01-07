@@ -3,7 +3,7 @@
     <div class="xuImg profile-page">
       <div class="profile-img" ngf-thumbnail="formdata.file || formdata.avatar" ngf-as-background="true"></div>
     </div>
-    <div class="name">{{formdata.prefix && formdata.prefix != 'NONE' ? formdata.prefix + ' ' : ''}}{{formdata.fullname}}</div>
+    <div class="name">{{formdata.prefix && formdata.prefix != 'NONE' ? formdata.prefix + ' ' : ''}}{{formdata.firstname}} {{formdata.middlename ? formdata.middlename + '. ' : ' '}}{{formdata.lastname}}</div>
     <div class="dept">
       <form name="forms.avatarForm" id="avatarForm">
         <label>Upload avatar (max: 5MB, square)</label>
@@ -65,7 +65,7 @@
                   ng-click="editUser(user.id, users.graduate)">
                   <div class="md-avatar bg-cover" style="background-image:url('{{user.avatar ? user.avatar : defaultAvatar}}')"></div>
                   <div class="md-list-item-text">
-                    <h3>{{user.fullname}}</h3>
+                    <h3>{{user.firstname}} {{user.middlename ? user.middlename + '. ' : ' '}}{{user.lastname}}</h3>
                     <p>{{user.email}}</p>
                   </div>
                   <md-button title="Delete this user" aria-label="Delete" class="md-icon-button nopadding nomargin delete-user" ng-click="deleteUser(user.id, 'graduate')"
@@ -83,7 +83,7 @@
                     ng-click="editUser(user.id, users.scholar)">
                     <div class="md-avatar bg-cover" style="background-image:url('{{user.avatar ? user.avatar : defaultAvatar}}')"></div>
                     <div class="md-list-item-text">
-                      <h3>{{user.prefix ? user.prefix + ' ' : ''}}{{user.fullname}}</h3>
+                      <h3>{{user.prefix ? user.prefix + ' ' : ''}}{{user.firstname}} {{user.middlename ? user.middlename + '. ' : ' '}}{{user.lastname}}</h3>
                       <p>{{user.email}}</p>
                     </div>
                     <md-button title="Delete this user" aria-label="Delete" class="md-icon-button nopadding nomargin delete-user" ng-click="deleteUser(user.id, 'scholar')"
@@ -101,7 +101,7 @@
                   ng-click="editUser(user.id, users.alumni)">
                   <div class="md-avatar bg-cover" style="background-image:url('{{user.avatar ? user.avatar : defaultAvatar}}')"></div>
                   <div class="md-list-item-text">
-                    <h3>{{user.prefix ? user.prefix + ' ' : ''}}{{user.fullname}}</h3>
+                    <h3>{{user.prefix ? user.prefix + ' ' : ''}}{{user.firstname}} {{user.middlename ? user.middlename + '. ' : ' '}}{{user.lastname}}</h3>
                     <p>{{user.email}}</p>
                   </div>
                   <md-button title="Delete this user" aria-label="Delete" class="md-icon-button nopadding nomargin delete-user" ng-click="deleteUser(user.id, 'alumni')"
@@ -359,7 +359,7 @@
                       </div>
                       <div class="select-all-checkboxes" flex="33" flex-sm="50" flex-xs="100" ng-repeat="user in users.graduate | toArray:false | orderBy:['-year', 'lastname']">
                         <md-checkbox ng-checked="exists(user, selected)" ng-click="toggle(user, selected)">
-                          {{user.prefix ? user.prefix + ' ' : ''}}{{user.fullname}}
+                          {{user.firstname}} {{user.middlename ? user.middlename + '. ' : ' '}}{{user.lastname}}
                         </md-checkbox>
                       </div>
                     </div>
@@ -371,7 +371,7 @@
                       </div>
                       <div class="select-all-checkboxes" flex="33" flex-sm="50" flex-xs="100" ng-repeat="user in users.scholar | toArray:false | orderBy:['-year', 'lastname']">
                         <md-checkbox ng-checked="exists(user, selected)" ng-click="toggle(user, selected)">
-                          {{user.prefix ? user.prefix + ' ' : ''}}{{user.fullname}}
+                          {{user.prefix ? user.prefix + ' ' : ''}}{{user.firstname}} {{user.middlename ? user.middlename + '. ' : ' '}}{{user.lastname}}
                         </md-checkbox>
                       </div>
                     </div>
@@ -383,7 +383,7 @@
                       </div>
                       <div class="select-all-checkboxes" flex="33" flex-sm="50" flex-xs="100" ng-repeat="user in users.alumni | toArray:false | orderBy:['-year', 'lastname']">
                         <md-checkbox ng-checked="exists(user, selected)" ng-click="toggle(user, selected)">
-                          {{user.prefix ? user.prefix + ' ' : ''}}{{user.fullname}}
+                          {{user.prefix ? user.prefix + ' ' : ''}}{{user.firstname}} {{user.middlename ? user.middlename + '. ' : ' '}}{{user.lastname}}
                         </md-checkbox>
                       </div>
                     </div>

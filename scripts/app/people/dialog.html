@@ -1,7 +1,7 @@
 <md-dialog aria-label="{{$root.selectedUser.id}}" flex="100" layout="column" class="person-dialog">
   <md-toolbar>
     <div class="md-toolbar-tools">
-      <h2>{{$root.selectedUser.prefix ? $root.selectedUser.prefix + ' ' : ''}}{{$root.selectedUser.fullname}}</h2>
+      <h2>{{$root.selectedUser.prefix ? $root.selectedUser.prefix + ' ' : ''}}{{$root.selectedUser.firstname}} {{$root.selectedUser.middlename ? $root.selectedUser.middlename + '. ' : ' '}}{{$root.selectedUser.lastname}}</h2>
       <span flex></span>
       <md-button class="md-icon-button" ng-click="cancel()">
         <i class="material-icons">close</i>
@@ -13,7 +13,7 @@
       <md-card md-theme="default">
         <md-card-title>
           <md-card-title-text>
-            <span class="md-headline">{{$root.selectedUser.prefix ? $root.selectedUser.prefix + ' ' : ''}}{{$root.selectedUser.fullname}}</span>
+            <span class="md-headline">{{$root.selectedUser.prefix ? $root.selectedUser.prefix + ' ' : ''}}{{$root.selectedUser.firstname}} {{$root.selectedUser.middlename ? $root.selectedUser.middlename + '. ' : ' '}}{{$root.selectedUser.lastname}}</span>
             <span class="md-subhead" ng-if="$root.selectedUser.type == 'graduate-ms'">Master's Student</span>
             <span class="md-subhead" ng-if="$root.selectedUser.type == 'graduate-phd'">Ph.D. Student</span>
             <span class="md-subhead" ng-if="$root.selectedUser.year && $root.selectedUser.type != 'scholar'">{{$root.selectedUser.type == 'graduate-ms' || $root.selectedUser.type == 'graduate-phd' ? 'Expected ' : ''}}Graduation: {{$root.selectedUser.year}}</span>
@@ -25,14 +25,14 @@
         </md-card-title>
         <md-card-content>
           <p ng-cloak ng-if="$root.selectedUser.school && $root.selectedUser.type == 'graduate'">
-            {{$root.selectedUser.fullname}} is a graduate student at {{$root.selectedUser.school}}.
+            {{$root.selectedUser.firstname}} {{$root.selectedUser.lastname}} is a graduate student at {{$root.selectedUser.school}}.
           </p>
           <p ng-cloak ng-if="$root.selectedUser.school && $root.selectedUser.type == 'alumni'">
-            {{$root.selectedUser.prefix ? $root.selectedUser.prefix + ' ' : ''}}{{$root.selectedUser.fullname}} graduated from {{$root.selectedUser.school}}
+            {{$root.selectedUser.prefix ? $root.selectedUser.prefix + ' ' : ''}}{{$root.selectedUser.firstname}} {{$root.selectedUser.lastname}} graduated from {{$root.selectedUser.school}}
             in {{$root.selectedUser.year}}.
           </p>
           <p ng-cloak ng-if="$root.selectedUser.school && $root.selectedUser.type == 'scholar'">
-            {{$root.selectedUser.prefix ? $root.selectedUser.prefix + ' ' : ''}}{{$root.selectedUser.fullname}} was a visiting scholar at {{$root.selectedUser.school}}{{$root.selectedUser.startDate && $root.selectedUser.endDate ? ' from ' + $root.selectedUser.startDate + ' to ' + $root.selectedUser.endDate + '.' : '.' }}
+            {{$root.selectedUser.prefix ? $root.selectedUser.prefix + ' ' : ''}}{{$root.selectedUser.firstname}} {{$root.selectedUser.lastname}} was a visiting scholar at {{$root.selectedUser.school}}{{$root.selectedUser.startDate && $root.selectedUser.endDate ? ' from ' + $root.selectedUser.startDate + ' to ' + $root.selectedUser.endDate + '.' : '.' }}
           </p>
           <p ng-cloak ng-if="$root.selectedUser.bio">
             <br>

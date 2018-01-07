@@ -200,15 +200,12 @@ var profileCtrl = function (AppServices, $rootScope, $scope, $http, Upload, $mdD
   $scope.register = function () {
     $scope.loading = true;
     $scope.formdata.avatar = $scope.defaultAvatar;
-    $scope.formdata.firstlast = $scope.formdata.firstname + ' ' + $scope.formdata.lastname;
     $scope.formdata.prefix = ($scope.formdata.prefix == 'NONE') ? '' : $scope.formdata.prefix;
-    if ($scope.formdata.middlename && $scope.formdata.middlename != '') {
-      $scope.formdata.fullname = $scope.formdata.firstname + ' ' + $scope.formdata.middlename + '. ' + $scope.formdata.lastname;
-    } else {
-      $scope.formdata.fullname = $scope.formdata.firstname + ' ' + $scope.formdata.lastname;
-    }
     if ($scope.formdata.type == 'scholar') {
       $scope.formdata.year = '';
+    }
+    if ($scope.formdata.firstlast) {
+      delete $scope.formdata.firstlast;
     }
     AppServices.register($scope.formdata)
       .then(function (result) {
@@ -273,12 +270,9 @@ var profileCtrl = function (AppServices, $rootScope, $scope, $http, Upload, $mdD
 
   $scope.studentSubmit = function () {
     $scope.loading = true;
-    $scope.formdata.firstlast = $scope.formdata.firstname + ' ' + $scope.formdata.lastname;
     $scope.formdata.prefix = ($scope.formdata.prefix == 'NONE') ? '' : $scope.formdata.prefix;
-    if ($scope.formdata.middlename && $scope.formdata.middlename != '') {
-      $scope.formdata.fullname = $scope.formdata.firstname + ' ' + $scope.formdata.middlename + '. ' + $scope.formdata.lastname;
-    } else {
-      $scope.formdata.fullname = $scope.formdata.firstname + ' ' + $scope.formdata.lastname;
+    if ($scope.formdata.firstlast) {
+      delete $scope.formdata.firstlast;
     }
     if ($scope.formdata.type == 'scholar') {
       $scope.formdata.year = '';
@@ -381,6 +375,7 @@ var profileCtrl = function (AppServices, $rootScope, $scope, $http, Upload, $mdD
             $scope.msg.searchNotFound = 'User Not Found. Please Register!';
           } else if (result.length == 1) {
             result.forEach(element => {
+              element.firstlast = element.firstname + ' ' + element.lastname;
               if (element.type == 'graduate-ms' || element.type == 'graduate-phd') {
                 $scope.users.graduate.push(element);
               } else {

@@ -43,6 +43,9 @@
     }
   }
   if ($found && $inputUser != NULL) {
+    if (isset($inputUser->searchInput)) {
+      unset($inputUser->searchInput);
+    }
     array_push($users->$type, $inputUser);
     unlink('../data/people.json');
     file_put_contents('../data/people.json', json_encode($users, JSON_PRETTY_PRINT));

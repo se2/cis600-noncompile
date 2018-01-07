@@ -5,9 +5,9 @@
 
   require('php-lib/LIB.php');
 
-  // $dup = false;
+  $dup = false;
   $users = array();
-  // $types = array('graduate', 'alumni', 'scholar');
+  $types = array('graduate', 'alumni', 'scholar');
 
   // get input data
   $postdata = file_get_contents("php://input");
@@ -20,38 +20,40 @@
   $newUser = $request->data;
   $users = json_decode(file_get_contents('../data/people.json'));
   // check email duplicate
-  // temporarily disable
-  // foreach ($types as $i => $type) {
-  //   foreach ($users as $j => $user) {
-  //     if ($newUser->email == $user->email
-  //       || (isset($user->email2) && !empty($user->email2) && $user->email2 == $newUser->email)) {
-  //       $dup = true;
-  //       break;
-  //     }
-  //     if (isset($newUser->email2) && !empty($newUser->email2)) {
-  //       if ($newUser->email2 == $user->email || (isset($user->email2) && !empty($user->email2) && $newUser->email2 == $user->email2)) {
-  //         $dup = true;
-  //         break;
-  //       }
-  //     }
-  //   }
-  // }
-
-  if ($newUser != NULL) {
-    $type = $newUser->type;
-    if ($newUser->type == 'graduate-ms' || $newUser->type == 'graduate-phd') {
-      $type = 'graduate';
+  foreach ($types as $i => $type) {
+    foreach ($users->$type as $j => $user) {
+      if ($newUser->email == $user->email
+        || (isset($user->email2) && !empty($user->email2) && $user->email2 == $newUser->email)) {
+        $dup = true;
+        break;
+      }
+      if (isset($newUser->email2) && !empty($newUser->email2)) {
+        if ($newUser->email2 == $user->email || (isset($user->email2) && !empty($user->email2) && $newUser->email2 == $user->email2)) {
+          $dup = true;
+          break;
+        }
+      }
     }
-    $newUser->id = $id;
-    array_push($users->$type, $newUser);
-    unlink('../data/people.json');
-    file_put_contents('../data/people.json', json_encode($users, JSON_PRETTY_PRINT));
-    echo json_encode($newUser);
-  } else {
-    echo json_encode(array());
   }
-  // if ($dup) {
-  //   echo json_encode(array());
-  // } else {
-  // }
+
+  if ($dup) {
+    echo json_encode(array());
+  } else {
+    if ($newUser != NULL) {
+      if (isset($newUser->searchInput)) {
+        unset($newUser->searchInput);
+      }
+      $type = $newUser->type;
+      if ($newUser->type == 'graduate-ms' || $newUser->type == 'graduate-phd') {
+        $type = 'graduate';
+      }
+      $newUser->id = $id;
+      array_push($users->$type, $newUser);
+      unlink('../data/people.json');
+      file_put_contents('../data/people.json', json_encode($users, JSON_PRETTY_PRINT));
+      echo json_encode($newUser);
+    } else {
+      echo json_encode(array());
+    }
+  }
 ?>

@@ -14,9 +14,20 @@
   $models = array($users->graduate, $users->alumni, $users->scholar);
   foreach ($models as $i => $model) {
     foreach ($model as $j => $user) {
+      $firsts = explode(" ", $user->firstname);
+      $lasts = explode(" ", $user->lastname);
+      foreach ($firsts as $key => $first) {
+        if ($search == strtolower($first)) {
+          $returnUsers[] = $user;
+        }
+      }
+      foreach ($lasts as $key => $last) {
+        if ($search == strtolower($last)) {
+          $returnUsers[] = $user;
+        }
+      }
       if ($search == strtolower($user->firstname)
       || $search == strtolower($user->lastname)
-      || $search == strtolower($user->fullname)
       || $search == strtolower($user->firstname . ' ' . $user->lastname)
       || $search == strtolower($user->email)
       || (isset($user->email2) && $search == strtolower($user->email2))) {
@@ -24,5 +35,5 @@
       }
     }
   }
-  echo json_encode($returnUsers);
+  echo json_encode(array_unique($returnUsers, SORT_REGULAR));
 ?>

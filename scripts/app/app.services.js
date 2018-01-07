@@ -42,16 +42,6 @@ var appServices = function ($rootScope, $http) {
           return response.data;
         });
     },
-    getUserData: function (userId) {
-      return $http.post($rootScope.baseURL + 'php/getUser.php', {
-        'userId': userId
-      })
-        .then(function (response) {
-          return response.data;
-        }, function (response) {
-          return response.data;
-        });
-    },
     deleteUser: function (userId, type) {
       return $http.post($rootScope.baseURL + 'php/deleteUser.php', {
         'userId': userId,
